@@ -462,8 +462,11 @@ box-shadow:  7px 7px 16px #6a645d,
 
 .siicon{
   width:40%;
-  padding-left:5%;
-  padding-right:5%;
+  margin:20px 5%;
+  border-radius: 5%;
+  background: #dceff9;
+  box-shadow:  7px 7px 16px #677075,
+               -7px -7px 16px #ffffff;
 }
 
 .sitext{
@@ -492,9 +495,9 @@ box-shadow:  7px 7px 16px #6b7174,
   letter-spacing: 1px;
   border-radius:10px;
   padding:10px;
-background: #dceff9;
-box-shadow:  7px 7px 16px #677075,
-             -7px -7px 16px #ffffff;
+  background: #dceff9;
+  box-shadow:  7px 7px 16px #677075,
+              -7px -7px 16px #ffffff;
 }
 
 .sight-contents{
