@@ -28,7 +28,7 @@ header{
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 0.8;
-  margin:0;
+  margin: 0;
 }
 
 .navi li{
@@ -586,27 +586,43 @@ box-shadow:  7px 7px 16px #677075,
 .sc-contents{
   display: flex;
   flex-wrap: wrap;
-  background-color: #9A98D9;
   opacity: 0.9;
   margin-bottom: 20px;
 }
 
 .sc-content{
-  width:14.6%;
-  margin-left: 1%;
-  margin-right: 1%;
+  width:30%;
+  margin: 20px 1.65% 40px 1.65%;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  border-radius: 5%;
+  background: linear-gradient(145deg, #dde0ec, #babcc7);
+  box-shadow:  9px 9px 18px #76777e,
+               -9px -9px 18px #ffffff;
 }
 
 .scicon{
-  width:100%;
+  width:70%;
   border-radius: 20%;
+  background: linear-gradient(145deg, #c4d6e1, #a5b4bd);
+  box-shadow:  12px 12px 17px #98a6ae,
+              -12px -12px 17px #d6eaf6;
 }
 
 .sctext{
-  text-align: center;
+  width:80%;
+  margin: 0 auto;
+}
+
+.sctext a{
+  text-decoration: none;
+  padding: 10px;
+  border-radius:20%;
+  margin-top: 10px;
+  background: linear-gradient(145deg, #e1e6ff, #bdc2d6);
+  box-shadow:  9px 9px 18px #787b88,
+               -9px -9px 18px #ffffff;
 }
 
 .sctext p{
@@ -614,7 +630,9 @@ box-shadow:  7px 7px 16px #677075,
   opacity: 0.8;
   border-radius: 5px;
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #B9C5E3;
+  background: linear-gradient(145deg, #e1e6ff, #bdc2d6);
+  box-shadow:  9px 9px 18px #787b88,
+               -9px -9px 18px #ffffff;
 }
 
 .ryojikan{
@@ -779,6 +797,101 @@ box-shadow:  7px 7px 16px #677075,
   background: linear-gradient(145deg, #fbfbea, #d4d4c5);
   box-shadow:  6px 6px 7px #76766e,
                -6px -6px 7px #ffffff;
+}
+
+.dan-top p{
+  opacity:0.6;
+  margin-top:0;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  background: linear-gradient(145deg, #fbfbea, #d4d4c5);
+  box-shadow:  6px 6px 7px #76766e,
+               -6px -6px 7px #ffffff;
+}
+
+.dan-contents{
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.dan-content{
+  width:30%;
+  margin: 20px 1.65% 40px 1.65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+
+.daicon{
+  width:70%;
+  border-radius: 20%;
+  background: linear-gradient(145deg, #ffffff, #dfdce2);
+  box-shadow:  5px 5px 10px #a4a1a6,
+               -5px -5px 10px #ffffff;
+}
+
+.datext{
+  width:80%;
+  margin: 0 auto;
+}
+
+.datext p{
+  letter-spacing: 1px;
+  opacity: 0.8;
+  border-radius: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  background: linear-gradient(145deg, #fbfbea, #d4d4c5);
+  box-shadow:  14px 14px 28px #7f7f76,
+              -14px -14px 28px #ffffff;
+}
+
+.sdan-content{
+  width:80%;
+  margin: 20px 10% 40px 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.sdaicon{
+  width:30%;
+  border-radius: 20%;
+  background: linear-gradient(145deg, #ffffff, #dfdce2);
+  box-shadow:  5px 5px 10px #a4a1a6,
+               -5px -5px 10px #ffffff;
+}
+
+.lv{
+  border-radius: 0px;
+  background: linear-gradient(145deg, #b790d6, #d9abff);
+  box-shadow:  5px 5px 10px #866a9d,
+               -5px -5px 10px #ffd6ff;
+}
+
+.lv1{
+  border-radius: 0px;
+  background: linear-gradient(145deg, #ddddae, #ffffcf);
+  box-shadow:  5px 5px 10px #a2a27f,
+               -5px -5px 10px #ffffff;
+}
+
+.lv2{
+  border-radius: 0px;
+  background: linear-gradient(145deg, #dddd64, #ffff77);
+  box-shadow:  5px 5px 10px #a2a249,
+               -5px -5px 10px #ffff95;
+}
+
+.lv3{
+  border-radius: 0px;
+  background: linear-gradient(145deg, #e0e001, #ffff01);
+  box-shadow:  5px 5px 10px #a4a401,
+               -5px -5px 10px #ffff01;
 }
 
 
