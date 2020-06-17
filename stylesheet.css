@@ -24,7 +24,7 @@ header{
 .navi{
   display: flex;
   padding: 0;
-  background-color: white;
+  background-color:#D4D4D5;
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 0.8;
@@ -944,11 +944,31 @@ box-shadow:  7px 7px 16px #677075,
 
 
 .footer{
-  background-color: black;
-  height:300px;
+  margin:5px;
+  padding: 20px;
+  border-radius: 0px;
+  background: #4e4f50;
+  box-shadow: inset 5px 5px 11px #1f2020,
+              inset -5px -5px 11px #7d7e80;
 }
 
+.footer-top h5{
+  color:#E7E6E7;
+  letter-spacing: 2px;
+}
 
+.footer-bottom{
+  text-align: center;
+}
+
+.footer-bottom p{
+  color:#E7E6E7;
+}
+
+.contact:hover{
+  opacity:0.6;
+  transition: 1s;
+}
 
 
 
