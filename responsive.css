@@ -1,0 +1,474 @@
+@media screen and (max-width:1366px){
+  .text p{
+    font-size: 85%;
+  }
+  .long-content p{
+    font-size: 85%;
+  }
+  .long-icon{
+    width:90%;
+  }
+  .icon-area{
+    text-align: center;
+  }
+  .datext p,a{
+    font-size: 85%;
+  }
+  .daicon{
+    width:80%;
+  }
+  .menun{
+    display: none;
+  }
+}
+@media screen and (max-width:1024px){
+  .top-wrapper h1{
+    font-size: 80px;
+  }
+  .text p{
+    font-size: 70%;
+  }
+  .site{
+    padding:5px;
+  }
+  .web-top h1{
+    font-size:30px;
+  }
+  .groce-top h1{
+    font-size: 30px;
+  }
+  .lib-top h1{
+    font-size: 30px;
+  }
+  .lib-top p{
+    font-size: 80%;
+  }
+  .insta-top h1{
+    font-size: 30px;
+  }
+  .insta-top p{
+    font-size: 80%;
+  }
+  .sight-top h1{
+    font-size: 30px;
+  }
+  .listsi{
+    font-size: 80%;
+    line-height: 40px;
+  }
+  .sc-top h1{
+    font-size: 30px;
+  }
+  .sc-top p{
+    font-size: 80%;
+  }
+  .cafe-top h1{
+    font-size: 30px;
+  }
+  .cafe-top p{
+    font-size: 80%;
+  }
+  .list{
+    font-size: 90%;
+    line-height: 40px;
+  }
+  .you-top h1{
+    font-size: 30px;
+  }
+  .you-top p{
+    font-size: 80%;
+  }
+  .twitter-top h1{
+    font-size: 30px;
+  }
+  .twitter-top p{
+    font-size: 80%;
+  }
+  .dan-top h1{
+    font-size: 30px;
+  }
+  .dan-top p{
+    font-size: 90%;
+  }
+  .datext p{
+    font-size: 80%;
+  }
+  .dan-contents{
+    padding:0 50px;
+  }
+  .dan-content{
+    width:40%;
+    margin:20px 5% 30px 5%;
+  }
+  .long-text p{
+    font-size: 12px;
+  }
+  .long-title{
+    padding:5px;
+  }
+  .long-up a{
+    font-size: 15px;
+    margin-top: 10px;
+    padding:3px;
+  }
+  .long-middle p{
+    font-size: 13px;
+    padding-top: 5px;
+  }
+  .long-middle h4{
+    font-size: 80%;
+  }
+}
+@media screen and (max-width:896px){
+  .top-wrapper h1{
+    padding-top: 150px;
+  }
+  .top-wrapper p{
+    padding-bottom: 100px;
+  }
+  .web-top h1{
+    font-size:20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .groce-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .lib-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .lib-top p{
+    font-size: 70%;
+  }
+  .insta-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .insta-top p{
+    font-size: 70%;
+  }
+  .sight-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .listsi{
+    font-size: 70%;
+    line-height: 40px;
+  }
+  .sc-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .sc-top p{
+    font-size: 70%;
+  }
+  .cafe-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .cafe-top p{
+    font-size: 70%;
+  }
+  .list{
+    font-size: 80%;
+    line-height: 40px;
+  }
+  .you-top h1{
+    font-size: 20px;
+  }
+  .you-top p{
+    font-size: 70%;
+  }
+  .twitter-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .twitter-top p{
+    font-size: 70%;
+  }
+  .dan-top h1{
+    font-size: 20px;
+    padding:0 15px;
+    line-height: 40px;
+  }
+  .dan-top p{
+    font-size: 80%;
+  }
+  .text p{
+    font-size: 60%;
+    letter-spacing: 1px;
+  }
+  .text a{
+    font-size: 60%;
+  }
+  .site{
+    margin: 0 auto 5px auto;
+  }
+  .long-title{
+    margin:0;
+  }
+  .long-middle h4{
+    font-size: 70%;
+  }
+}
+@media screen and (max-width:834px){
+  .long-content{
+    margin:10px auto 30px auto;
+  }
+  .text p{
+    margin-bottom: 5px;
+  }
+  .long-text p{
+    margin-bottom:0;
+    font-size: 55%;
+  }
+  .long-up a{
+    font-size: 50%;
+  }
+  .long-middle p{
+    font-size: 55%;
+  }
+  .footer-top h5{
+    font-size: 55%;
+  }
+  .footer-bottom p{
+    font-size: 55%;
+  }
+  .datext p{
+    font-size: 55%;
+  }
+  .datext h4{
+    font-size: 80%;
+  }
+}
+@media screen and (max-width:800px){
+  .contents{
+    padding:0 3%;
+  }
+  .dan-content{
+    margin:10px 5% 10px 5%;
+  }
+  .sdaicon{
+    width:50%;
+  }
+  .a{
+    height:50%;
+  }
+
+/* メニュー   */
+
+  .navi{
+    display: none;
+  }
+  .menun{
+    display:block;
+  }
+  .top-wrapper h1{
+    padding-top: 100px;
+  }
+  .top-wrapper p{
+    padding-bottom: 80px;
+  }
+  .li{
+    height:30px;
+    line-height: 30px;
+  }
+  .site{
+    margin-bottom: 0;
+  }
+  .text a{
+    font-size: 40%;
+  }
+  li a{
+    font-size: 8px;
+  }
+  .li{
+    height:20px;
+    line-height: 20px;
+    padding-bottom: 3px;
+    width:17%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+@media screen and (max-width:414px){
+  .top-wrapper h1{
+    font-size: 30px;
+  }
+  .top-wrapper p{
+    font-size: 10%;
+  }
+  .web-top h1{
+    font-size:15px;
+    padding:0 15px;
+    line-height: 30px;
+  }
+  .groce-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .lib-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .lib-top p{
+    font-size: 20%;
+  }
+  .insta-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .insta-top p{
+    font-size: 20%;
+  }
+  .sight-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .listsi{
+    line-height: 30px;
+  }
+  .sc-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .sc-top p{
+    font-size: 20%;
+  }
+  .cafe-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .cafe-top p{
+    font-size: 20%;
+  }
+  .list{
+    line-height:30px;
+  }
+  .you-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .you-top p{
+    font-size: 20%;
+  }
+  .twitter-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .twitter-top p{
+    font-size: 20%;
+  }
+  .dan-top h1{
+    font-size: 15px;
+    padding:0 15px;
+    line-height: 30px;
+    margin-top: 100px;
+  }
+  .dan-top p{
+    font-size: 30%;
+  }
+  .contents{
+    flex-direction: column;
+  }
+  .content{
+    width:90%;
+    margin:10px 5% 10px 5%;
+  }
+  .long-contents{
+    padding:0 3%;
+  }
+  .long-text p{
+    font-size:5px;
+    letter-spacing: 1px;
+  }
+  .long-up p{
+    font-size: 2px;
+    padding-bottom: 0px;
+  }
+  .long-title{
+    padding:3px;
+    letter-spacing: 1px;
+  }
+  .long-up a{
+    font-size: 2px;
+    padding:0px;
+    margin-top: 0;
+  }
+  .cafe-contents{
+    padding:0 3%;
+  }
+  .long-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:transrate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+  .icon-area{
+    position: relative;
+  }
+  .long-middle p{
+    font-size: 2px;
+  }
+  .long-middle h4{
+    font-size: 2px;
+  }
+  .sight-contents{
+    padding:0 2%;
+  }
+  .dan-contents{
+    padding:0 2%;
+  }
+  .dan-content{
+    width:100%;
+  }
+  .sdan-content{
+    width:100%;
+    margin:20px 5%;
+  }
+  .datext{
+    width:90%;
+  }
+  .sdaicon{
+    width:80%;
+  }
+  .footer h5{
+    font-size: 5px;
+  }
+  .menun label{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:375px){
+
+}
+
+
+@media screen and (max-width:320px){
+}
