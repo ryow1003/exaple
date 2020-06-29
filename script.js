@@ -71,23 +71,4 @@ $(function(){
       next();
     });
   });
-  /*
-  $(function(){
-    ScrollReveal().reveal('.icon',{
-      duration:1000,
-      viewFactor:0.2,
-      reset:true,
-      opacity:0,
-      origin:'left'
-    });
-  });
-  $(function(){
-    ScrollReveal().reveal('.text',{
-      duration:1000,
-      viewFactor:0.2,
-      reset:true,
-      opacity:0,
-      origin:'left'
-    });
-  });*/
 });
