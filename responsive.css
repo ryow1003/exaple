@@ -404,12 +404,17 @@
   .long-contents{
     padding:0 3%;
   }
+  .long-content{
+    width:390px;
+    margin-left:auto;
+    margin-right: auto;
+  }
   .long-text p{
-    font-size:5px;
+    font-size:9px;
     letter-spacing: 1px;
   }
   .long-up p{
-    font-size: 2px;
+    font-size: 8px;
     padding-bottom: 0px;
   }
   .long-title{
@@ -417,7 +422,7 @@
     letter-spacing: 1px;
   }
   .long-up a{
-    font-size: 2px;
+    font-size: 8px;
     padding:0px;
     margin-top: 0;
   }
@@ -428,7 +433,6 @@
     position: absolute;
     top:50%;
     left:50%;
-    -webkit-transform:transrate(-50%,-50%);
     transform: translate(-50%,-50%);
   }
   .icon-area{
