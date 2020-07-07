@@ -555,10 +555,11 @@ span{
                -5px -5px 9px #ffffff;
 }
 .long_left{
-  padding:4%;
+  padding:10px;
   width:70%;
 }
 .long_title{
+  margin:6px 0;
   font-weight:bolder;
   background: #f8f8f7;
   box-shadow:  7px 7px 16px #757574,
