@@ -526,6 +526,7 @@ span{
 /* ~414px */
 .long_contents{
   width:100%;
+  display: none;
 }
 .long_content{
   width:90%;
@@ -569,7 +570,7 @@ span{
 }
 .long_text{
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
   font-weight: normal;
 }
@@ -593,7 +594,7 @@ span{
                -7px -7px 14px #ffffff;
 }
 .long-up p{
-  font-size: 10px;
+  font-size: 8px;
   margin:0;
 }
 .long_up a{
