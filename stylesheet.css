@@ -595,17 +595,17 @@ span{
   box-shadow:  7px 7px 14px #9c9d9d,
                -7px -7px 14px #ffffff;
 }
-.long-up p{
+.long_up p{
   font-size:8px;
   margin:0;
 }
 .long_up a{
   font-size: 10px;
-  margin-top: 3px;
+  margin-top: 10px;
   display: inline-block;
   text-decoration: none;
   color:black;
-  padding:5px;
+  padding:3px;
   border-radius: 10%;
   background: linear-gradient(145deg, #ffbdbd, #de9f9f);
   box-shadow:  5px 5px 6px #c68e8e,
