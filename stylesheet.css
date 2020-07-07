@@ -447,6 +447,7 @@ span{
 .long-middle{
   width:20%;
   background-color: #DDDDDE;
+  position: relative;
 }
 
 .long-middle p{
@@ -472,6 +473,9 @@ span{
 }
 
 .long-down{
+  position:absolute;
+  bottom: 0;
+  left:0;
   width:100%;
   height:50%;
   border-radius: 0px;
