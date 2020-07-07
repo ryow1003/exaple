@@ -301,6 +301,12 @@
   }
 }
 @media screen and (max-width:414px){
+  .long_contents{
+    display: block;
+  }
+  .show{
+    display: none;
+  }
   .top-wrapper h1{
     font-size: 30px;
   }
