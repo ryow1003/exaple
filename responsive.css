@@ -325,7 +325,7 @@
     margin-top: 100px;
   }
   .lib-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .insta-top h1{
     font-size: 15px;
@@ -334,7 +334,7 @@
     margin-top: 100px;
   }
   .insta-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .sight-top h1{
     font-size: 15px;
@@ -352,7 +352,7 @@
     margin-top: 100px;
   }
   .sc-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .cafe-top h1{
     font-size: 15px;
@@ -361,7 +361,7 @@
     margin-top: 100px;
   }
   .cafe-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .list{
     line-height:30px;
@@ -373,7 +373,7 @@
     margin-top: 100px;
   }
   .you-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .twitter-top h1{
     font-size: 15px;
@@ -382,7 +382,7 @@
     margin-top: 100px;
   }
   .twitter-top p{
-    font-size: 20%;
+    font-size: 50%;
   }
   .dan-top h1{
     font-size: 15px;
@@ -391,7 +391,7 @@
     margin-top: 100px;
   }
   .dan-top p{
-    font-size: 30%;
+    font-size: 50%;
   }
   .contents{
     flex-direction: column;
