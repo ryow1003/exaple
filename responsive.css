@@ -447,6 +447,9 @@
   .long-middle h4{
     font-size: 10px;
   }
+  .long-down{
+    height:74px;
+  }
   .sight-contents{
     padding:0 2%;
   }
