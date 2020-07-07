@@ -409,12 +409,15 @@
     margin-left:auto;
     margin-right: auto;
   }
+  .long-middle p{
+    padding:2px;
+  }
   .long-text p{
     font-size:9px;
     letter-spacing: 1px;
   }
   .long-up p{
-    font-size: 8px;
+    font-size: 5px;
     padding-bottom: 0px;
   }
   .long-title{
