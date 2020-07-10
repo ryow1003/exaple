@@ -1,4 +1,5 @@
 @media screen and (max-width:1366px){
+
   .text p{
     font-size: 85%;
   }
@@ -304,19 +305,20 @@
   .long_contents{
     display: block;
   }
-  .show{
+  .show,.sight-contents{
     display: none;
   }
   .top-wrapper h1{
     font-size: 30px;
   }
   .top-wrapper p{
-    font-size: 10%;
+    font-size: 10px;
   }
   .web-top h1{
     font-size:15px;
     padding:0 15px;
     line-height: 30px;
+    margin-top: 10px;
   }
   .groce-top h1{
     font-size: 15px;
