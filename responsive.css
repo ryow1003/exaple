@@ -414,8 +414,7 @@
   }
   .long-content{
     width:390px;
-    margin-left:auto;
-    margin-right: auto;
+    margin:20px auto;
   }
   .long-middle p{
     padding:2px;
@@ -485,9 +484,58 @@
   }
 }
 @media screen and (max-width:375px){
-
+  .content{
+    width:350px;
+    height:175px;
+  }
+  .long-content{
+    width:350px;
+  }
 }
 
 
 @media screen and (max-width:320px){
+  header{
+    display: none;
+  }
+  .top-wrapper{
+    display: none;
+  }
+  .main-wrapper{
+    display: none;
+  }
+  .web-site{
+    display: none;
+  }
+  .grocery-store{
+    display: none;
+  }
+  .library{
+    display: none;
+  }
+  .cafe{
+    display: none;
+  }
+  .sightseeing{
+    display: none;
+  }
+  .Instagram{
+    display: none;
+  }
+  .twitter{
+    display: none;
+  }
+  .youtube{
+    display: none;
+  }
+  .school{
+    display: none;
+  }
+  .danger{
+    display: none;
+  }
+  .min-none{
+    display: block;
+    text-align: center;
+  }
 }
