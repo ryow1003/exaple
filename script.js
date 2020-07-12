@@ -181,4 +181,14 @@ $(function(){
     return false;
     });
   });
+  var images = [ 'url(https://pbs.twimg.com/media/EctQEWAXoAAL6if?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctQEWCWoAAXWwW?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctQEWAWoAgHLPJ?format=jpg&name=large)' ,'url(https://pbs.twimg.com/media/EctQEWAXgAANHFu?format=jpg&name=large)','url(https://pbs.twimg.com/media/EZOFhW0X0AMMxk-?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctR_8kX0AIkRc4?format=jpg&name=900x900)','url(https://pbs.twimg.com/media/EctR_8aXYAM9mGw?format=jpg&name=900x900)','url(https://pbs.twimg.com/media/EctS-XCXYAAzbVX?format=jpg&name=large)' ];  // ランダム表示させたい画像のパス
+
+    $(function(){
+      var backgroundRandom = function(){
+        var number = Math.floor(Math.random() * images.length);
+        var selectedImg = images[number];
+        $('.top-wrapper').css('background-image',selectedImg);
+      };
+      setInterval(backgroundRandom, 5000);
+    });
 });
