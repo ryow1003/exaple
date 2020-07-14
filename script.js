@@ -17,6 +17,12 @@ $(function(){
       next();
     });
   });
+  $('.extra').click(function(){
+    $('.fa-comments').addClass('fa-spin').delay(8000).queue(function(next){
+      $('.fa-comments').removeClass('fa-spin');
+      next();
+    });
+  });
   $('.four').click(function(){
     $('.fa-book-reader').addClass('fa-spin').delay(8000).queue(function(next){
       $('.fa-book-reader').removeClass('fa-spin');
@@ -93,6 +99,16 @@ $(function(){
   });
   $(function(){
   $('a[href^="#gjump"]').click(function(){
+    var speed = 800;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+    });
+  });
+  $(function(){
+  $('a[href^="#enjump"]').click(function(){
     var speed = 800;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
@@ -181,14 +197,4 @@ $(function(){
     return false;
     });
   });
-  var images = [ 'url(https://pbs.twimg.com/media/EctQEWAXoAAL6if?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctQEWCWoAAXWwW?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctQEWAWoAgHLPJ?format=jpg&name=large)' ,'url(https://pbs.twimg.com/media/EctQEWAXgAANHFu?format=jpg&name=large)','url(https://pbs.twimg.com/media/EZOFhW0X0AMMxk-?format=jpg&name=large)','url(https://pbs.twimg.com/media/EctR_8kX0AIkRc4?format=jpg&name=900x900)','url(https://pbs.twimg.com/media/EctR_8aXYAM9mGw?format=jpg&name=900x900)','url(https://pbs.twimg.com/media/EctS-XCXYAAzbVX?format=jpg&name=large)' ];  // ランダム表示させたい画像のパス
-
-    $(function(){
-      var backgroundRandom = function(){
-        var number = Math.floor(Math.random() * images.length);
-        var selectedImg = images[number];
-        $('.top-wrapper').css('background-image',selectedImg);
-      };
-      setInterval(backgroundRandom, 5000);
-    });
 });
