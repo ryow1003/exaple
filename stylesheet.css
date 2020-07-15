@@ -579,7 +579,6 @@ li a{
   font-size: 20px;
   margin-top: 30px;
   padding:5px;
-  border-radius: 10%;
 }
 
 .zip{
@@ -668,20 +667,7 @@ li a{
 .long_up a{
   font-size: 10px;
   margin-top: 10px;
-  display: inline-block;
-  text-decoration: none;
-  color:black;
-  padding:3px;
-  border-radius: 10%;
-  background: linear-gradient(145deg, #ffbdbd, #de9f9f);
-  box-shadow:  5px 5px 6px #c68e8e,
-               -5px -5px 6px #ffd4d4;
-}
 
-.long_up a:hover{
-  background: #f77878;
-  box-shadow: inset 5px 5px 6px #c66060,
-              inset -5px -5px 6px #ff9090;
 }
 
 .pip {
