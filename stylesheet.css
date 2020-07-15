@@ -1,1109 +1,1965 @@
-
-
-
-
-body{
-  margin:0;
-  font-family: serif;
-  background-color: #F8F8FE;
-  width:100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  min-width: 320px;
-}
-
-.title{
-  color:white;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-header{
-  position: fixed;
-  top:0;
-  width:100%;
-  z-index: 1000;
-  opacity: 0.8;
-  height:30px;
-}
-
-
-.navi{
-  display: flex;
-  background-color:black;
-  opacity: 0.6;
-  margin: 0;
-  width:100%;
-  height:100%;
-}
-
-.navi p{
-  padding-top: 10px;
-  height:100%;
-  width:5%;
-  margin-right:1.345%;
-  margin-left:1.345%;
-  text-align: center;
-  list-style: none;
-  line-height: 30px;
-}
-
-.fa-2x{
-  color:white;
-}
-
-.navi p:hover{
-  opacity: 0.6;
-  transition: 1s;
-}
-
-.menun {
-  display: none;
-  max-width: 800px;
-  width:100%;
-}
-
-.menun a {
-  display: block;
-  font-size: 13px;
-  padding: 15px;
-  text-decoration: none;
-  color: #000;
-}
-
-label {
-  display: block;
-  margin: 0 0 4px 0;
-  padding : 15px;
-  line-height: 1;
-  color :#fff;
-  border-radius: 0px;
-  background: #4c4d4d;
-  box-shadow:  5px 5px 7px #1e1f1f,
-               -5px -5px 7px #7a7b7b;
-  cursor :pointer;
-}
-
-input {
-  display: none;
-}
-
-.menun ul {
-  margin: 0;
-  padding: 0;
-  background :#f4f4f4;
-  list-style: none;
-}
-
-.menun li {
-  margin:0 10px;
-  padding-left: 10px;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-#menu_bar01:checked ~ #links01 li{
-  height: 40px;
-  opacity: 1;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-
-#links01 li:hover{
-  border-radius: 5px;
-  background: #b9bbbb;
-  box-shadow: inset 5px 5px 7px #4a4b4b,
-              inset -5px -5px 7px #ffffff;
-}
-
-span{
-  color:red;
-}
-
-.top-wrapper{
-  background-image: url(https://pbs.twimg.com/media/EctQEWAWoAgHLPJ?format=jpg&name=large);
-  background-size: cover;
-  text-align: center;
-  color:white;
-}
-
-.top-wrapper h1{
-  background-color:black;
-  opacity:0.6;
-  padding-top: 200px;
-  margin:0;
-  font-size: 100px
-}
-
-.top-wrapper p{
-  background-color:black;
-  opacity: 0.6;
-  padding-top: 10px;
-  padding-bottom: 200px;
-  margin-top: 0;
-}
-
-.menu{
-  text-align: center;
-}
-
-.ul{
-  display: flex;
-  flex-wrap: wrap;
-  padding:0;
-  margin-top: 15px;
-  margin-bottom: 0;
-}
-
-.li{
-  list-style: none;
-  width:18%;
-  height:40px;
-  line-height: 40px;
-  margin-right:1%;
-  margin-left: 1%;
-  opacity:0.7;
-  margin-bottom: 15px;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-li a{
-  color:black;
-}
-.a{
-  text-decoration: none;
-  display: inline-block;
-  width:100%;
-  height:100%;
-}
-
-.blue{
-  background: #e8b0f7;
-  box-shadow:  5px 5px 5px #b78bc3,
-               -5px -5px 5px #ffd5ff;
-}
-.blue:hover{
-  border-radius: 2px;
-  background: #e8b0f7;
-  box-shadow: inset 5px 5px 5px #b78bc3,
-              inset -5px -5px 5px #ffd5ff;
-}
-.pur{
-  background: #fdd3f7;
-  box-shadow:  5px 5px 5px #c8a7c3,
-               -5px -5px 5px #ffffff;
-}
-.pur:hover{
-  background: #fdd3f7;
-  box-shadow: inset 5px 5px 5px #c8a7c3,
-              inset -5px -5px 5px #ffffff;
-}
-.pink{
-  background: #f5a3b8;
-  box-shadow:  5px 5px 5px #c28191,
-               -5px -5px 5px #ffc5df;
-}
-.pink:hover{
-  background: #f5a3b8;
-  box-shadow: inset 5px 5px 5px #c28191,
-              inset -5px -5px 5px #ffc5df;
-}
-.redi{
-  background: #a2f1fb;
-  box-shadow:  5px 5px 5px #80bec6,
-               -5px -5px 5px #c4ffff;
-}
-.redi:hover{
-  background: #a2f1fb;
-  box-shadow: inset 5px 5px 5px #80bec6,
-              inset -5px -5px 5px #c4ffff;
-}
-.cherry{
-  background: #abf7de;
-  box-shadow:  5px 5px 5px #87c3af,
-               -5px -5px 5px #cfffff;
-}
-.cherry:hover{
-  background: #abf7de;
-  box-shadow: inset 5px 5px 5px #87c3af,
-              inset -5px -5px 5px #cfffff;
-}
-.red{
-  background: #fdb4c1;
-  box-shadow:  5px 5px 5px #c88e98,
-               -5px -5px 5px #ffdaea;
-}
-.red:hover{
-  background: #fdb4c1;
-  box-shadow: inset 5px 5px 5px #c88e98,
-              inset -5px -5px 5px #ffdaea;
-}
-.orenge{
-  background: #f5d1ff;
-  box-shadow:  5px 5px 5px #c2a5c9,
-               -5px -5px 5px #fffdff;
-}
-.orenge:hover{
-  background: #f5d1ff;
-  box-shadow: inset 5px 5px 5px #c2a5c9,
-              inset -5px -5px 5px #fffdff;
-}
-.pi{
-  background: #fab8f1;
-  box-shadow:  5px 5px 5px #c691be,
-               -5px -5px 5px #ffdfff;
-}
-.pi:hover{
-  background: #fab8f1;
-  box-shadow: inset 5px 5px 5px #c691be,
-              inset -5px -5px 5px #ffdfff;
-}
-.yellow{
-  background: #f9e5ff;
-  box-shadow:  5px 5px 5px #c5b5c9,
-               -5px -5px 5px #ffffff;
-}
-.yellow:hover{
-  background: #f9e5ff;
-  box-shadow: inset 5px 5px 5px #c5b5c9,
-              inset -5px -5px 5px #ffffff;
-}
-.ye{
-  background: #ffdbe4;
-  box-shadow:  5px 5px 5px #c9adb4,
-               -5px -5px 5px #ffffff;
-}
-.ye:hover{
-  background: #ffdbe4;
-  box-shadow: inset 5px 5px 5px #c9adb4,
-              inset -5px -5px 5px #ffffff;
-}
-.sky{
-  background: #bff6fd;
-  box-shadow:  5px 5px 5px #97c2c8,
-               -5px -5px 5px #e7ffff;
-}
-.sky:hover{
-  background: #bff6fd;
-  box-shadow: inset 5px 5px 5px #97c2c8,
-              inset -5px -5px 5px #e7ffff;
-}
-.gre{
-  background: #ccffee;
-  box-shadow:  5px 5px 5px #a1c9bc,
-               -5px -5px 5px #f7ffff;
-}
-.gre:hover{
-  background: #ccffee;
-  box-shadow: inset 5px 5px 5px #a1c9bc,
-              inset -5px -5px 5px #f7ffff;
-}
-
-/*WEB*/
-
-
-.web-top{
-  text-align: center;
-}
-.web-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top:60px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.contents{
-  display: flex;
-  flex-wrap: wrap;
-  padding:0 5%;
-  opacity:0.9;
-  margin-top: 20px;
-}
-
-.content{
-  width:48%;
-  margin:10px 1% 50px 1% ;
-  text-align: center;
-  display: flex;
-  border-radius: 0px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.site{
-  font-size: 28px;
-  font-weight:bolder;
-  border-radius: 0px;
-  background: #ffffff;
-  box-shadow:  7px 7px 14px #757575,
-               -7px -7px 14px #ffffff;
-  display: inline-block;
-  padding:10px 15px;
-}
-
-.icon{
-  width:50%;
-  background: #f8f8f7;
-  box-shadow:  7px 7px 16px #757574,
-              -7px -7px 16px #ffffff;
-  margin-right: 10px;
-  border-radius: 10%;
-}
-
-.text{
-  width:50%;
-  padding:5px;
-}
-
-.text p{
-  font-size: 18px;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-
-/*grocery*/
-
-
-.groce-top{
-  text-align: center;
-}
-
-.groce-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 3px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-/*english*/
-.en-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.en-top p{
-  padding:0 20px;
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-/*Library*/
-.en-top{
-  text-align: center;
-}
-
-.lib-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.lib-top p{
-  padding:0 20px;
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.lib-top{
-  text-align: center;
-}
-
-.long-contents{
-  padding:0 10%;
-  opacity: 0.9;
-}
-
-.long-content{
-  margin:50px auto 100px auto ;
-  display: flex;
-  text-align: center;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow:  5px 5px 9px #737373,
-               -5px -5px 9px #ffffff;
-}
-
-.long-text{
-  width:40%;
-  padding:10px;
-  letter-spacing: 2px;
-  opacity: 0.8;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.long-title{
-  font-size: 30px;
-  font-weight:bolder;
-  background: #f8f8f7;
-  box-shadow:  7px 7px 16px #757574,
-              -7px -7px 16px #ffffff;
-  display: inline-block;
-  padding:10px 15px;
-  border-radius: 0;
-}
-
-.long-text p{
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-.long-middle{
-  width:20%;
-  background-color: #DDDDDE;
-  position: relative;
-}
-
-.long-middle p{
-  font-size: 15px;
-}
-
-.long-middle h4{
-  font-weight: normal;
-}
-
-.long-middle p{
-  font-size: 20px;
-  margin:0;
-  padding:10px;
-}
-
-
-.long-up{
-  width:100%;
-  height:50%;
-  border-radius: 0px;
-  color:black;
-}
-
-.long-down{
-  position:absolute;
-  bottom: 0;
-  left:0;
-  width:100%;
-  height:50%;
-  border-radius: 0px;
-  background: #fcfdfd;
-  box-shadow:  7px 7px 14px #9c9d9d,
-               -7px -7px 14px #ffffff;
-}
-
-.long-icon{
-  margin:0;
-  width: 100%;
-  border-radius:50%;
-  background: #f7f7f7;
-  box-shadow:  9px 9px 16px #888888,
-               -9px -9px 16px #ffffff;
-}
-
-.icon-area{
-  position: relative;
-  width:40%;
-  background-color: #DDDDDE;
-}
-
-.btn-flat-simple {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  color: #00BCD4;
-  background: #ECECEC;
-  transition: .4s;
-}
-
-.btn-flat-simple:hover {
-  background: #00bcd4;
-  color: white;
-}
-
-.long-up a{
-  font-size: 20px;
-  margin-top: 30px;
-  padding:5px;
-}
-
-.zip{
-  font-size: 20px;
-}
-
-/* ~414px */
-.long_contents{
-  width:100%;
-  display: none;
-}
-.long_content{
-  width:90%;
-  margin:40px auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.icon_area{
-  width:100%;
-  text-align: center;
-}
-.long_icon{
-  width:180px;
-  height:180px;
-  border-radius:50%;
-  background: #f7f7f7;
-  box-shadow:  9px 9px 16px #888888,
-               -9px -9px 16px #ffffff;
-}
-.long_under{
-  min-height: 180px;
-  width:100%;
-  display: flex;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow:  5px 5px 9px #737373,
-               -5px -5px 9px #ffffff;
-}
-.long_left{
-  padding:10px;
-  width:70%;
-}
-.long_title{
-  margin:6px 0;
-  font-weight:bolder;
-  background: #f8f8f7;
-  box-shadow:  7px 7px 16px #757574,
-              -7px -7px 16px #ffffff;
-  display: inline-block;
-  padding:3px;
-  font-size: 12px;
-  font-weight: normal;
-}
-.long_text{
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 10px;
-  letter-spacing: 1px;
-  font-weight: normal;
-  opacity: 0.8
-}
-.long_right{
-  text-align: center;
-  width:30%;
-  position: relative;
-}
-.long_up{
-  width:100%;
-  height:100px;
-  opacity: 0.8;
-}
-.long_down{
-  position: absolute;
-  bottom: 0;
-  left:0;
-  width:100%;
-  height:102px;
-  background: #fcfdfd;
-  box-shadow:  7px 7px 14px #9c9d9d,
-               -7px -7px 14px #ffffff;
-}
-.long_up p{
-  font-size:8px;
-  margin:0;
-  padding:5px;
-}
-.long_up a{
-  font-size: 10px;
-  margin-top: 10px;
-
-}
-
-.pip {
-  display: inline-block;
-  padding: 5px 5px;
-  background: #6AD0F9;
-  border-radius: 4px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.4);
-  box-shadow: 0px 6px 3px -3px rgba(0,0,0,0.4);
-  -webkit-transition: .12s;
-  transition: .12s;
-}
-.pip:hover {
-  background: #ffffff;
-  border: solid 2px #4CB0D8;
-  color: #6AD0F9;
-  opacity: 0.8;
-}
-
-
-
-
-
-/*Instagram*/
-
-
-.insta-top{
-  text-align: center;
-}
-
-.insta-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.insta-top p{
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-/*sightseeing*/
-
-
-.sight-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.sight-top{
-  text-align: center;
-}
-
-.sight-contents{
-  padding:0 10%;
-}
-
-.listsi{
-  opacity:0.6;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  text-align: center;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-/*News*/
-
-
-.sc-top{
-  text-align: center;
-}
-
-.sc-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.sc-top p{
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  padding: 10px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-
-/*cafe*/
-
-
-.cafe-top{
-  text-align: center;
-}
-
-.cafe-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.cafe-top p{
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.list{
-  opacity:0.6;
-  margin-top:15px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  text-align: center;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-.cafe-contents{
-  padding:0 15%;
-}
-
-
-/*twitter*/
-
-
-.twitter-top{
-  text-align: center;
-}
-
-.twitter-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.twitter-top p{
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.twitter-contents{
-  text-align: center;
-}
-.twitter-contents h1{
-  padding: 100px 0;
-  opacity:0.6;
-  margin-bottom: 10px;
-  margin-top: 0;
-  letter-spacing: 5px;
-  line-height: 50px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-
-/*danger*/
-
-
-.dan-top{
-  text-align: center;
-}
-
-.dan-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.dan-top p{
-  opacity:0.6;
-  margin-top:0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.dan-contents{
-  display: flex;
-  flex-wrap: wrap;
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-.dan-content{
-  width:30%;
-  margin: 20px 1.65% 40px 1.65%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  border-radius: 5%;
-}
-
-
-.daicon{
-  width:70%;
-  border-radius: 20%;
-  background: linear-gradient(145deg, #ffffff, #dfdce2);
-  box-shadow:  5px 5px 10px #a4a1a6,
-               -5px -5px 10px #ffffff;
-}
-
-.datext{
-  width:80%;
-  margin: 0 auto;
-}
-
-.datext p{
-  padding:10px;
-  letter-spacing: 1px;
-  opacity: 0.8;
-  border-radius: 5px;
-  font-family: "Noto Sans JP", sans-serif;
-  background: linear-gradient(145deg, #fbfbea, #d4d4c5);
-  box-shadow:  14px 14px 28px #7f7f76,
-              -14px -14px 28px #ffffff;
-}
-
-.sdan-content{
-  width:80%;
-  margin: 20px 10% 40px 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  border-radius: 5%;
-}
-
-.sdaicon{
-  width:30%;
-  border-radius: 20%;
-  background: linear-gradient(145deg, #ffffff, #dfdce2);
-  box-shadow:  5px 5px 10px #a4a1a6,
-               -5px -5px 10px #ffffff;
-}
-
-.lv{
-  border-radius: 0px;
-  background: linear-gradient(145deg, #b790d6, #d9abff);
-  box-shadow:  5px 5px 10px #866a9d,
-               -5px -5px 10px #ffd6ff;
-}
-
-.lv1{
-  border-radius: 0px;
-  background: linear-gradient(145deg, #ddddae, #ffffcf);
-  box-shadow:  5px 5px 10px #a2a27f,
-               -5px -5px 10px #ffffff;
-}
-
-.lv2{
-  border-radius: 0px;
-  background: linear-gradient(145deg, #dddd64, #ffff77);
-  box-shadow:  5px 5px 10px #a2a249,
-               -5px -5px 10px #ffff95;
-}
-
-.lv3{
-  border-radius: 0px;
-  background: linear-gradient(145deg, #e0e001, #ffff01);
-  box-shadow:  5px 5px 10px #a4a401,
-               -5px -5px 10px #ffff01;
-}
-
-
-/*youtube*/
-
-
-.you-top{
-  text-align: center;
-}
-
-.you-top h1{
-  font-size: 40px;
-  opacity:0.6;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0 50px;
-  border-radius: 5px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-
-.you-top p{
-  opacity:0.6;
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-}
-.you-contents{
-  text-align: center;
-}
-.you-contents h1{
-  opacity:0.6;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  letter-spacing: 5px;
-  line-height: 50px;
-  background: #ebebeb;
-  box-shadow:  7px 7px 14px #6c6c6c,
-               -7px -7px 14px #ffffff;
-  padding:100px 0;
-}
-
-
-/*footer*/
-
-
-.footer{
-  margin:5px;
-  padding: 20px;
-  border-radius: 0px;
-  background: #4e4f50;
-  box-shadow: inset 5px 5px 11px #1f2020,
-              inset -5px -5px 11px #7d7e80;
-}
-
-.footer-top h5{
-  text-align: center;
-  color:#E7E6E7;
-  letter-spacing: 2px;
-}
-
-.footer-bottom{
-  text-align: center;
-}
-
-.footer-bottom p{
-  color:#E7E6E7;
-}
-
-.contact:hover{
-  opacity:0.6;
-  transition: 1s;
-}
-.min-none{
-  display: none;
-}
-.min-none p{
-  color:gray;
-}
-.adv{
-  text-align: center;
-}
-.adva{
-  text-align: center;
-  display: none;
-}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ryo＠Toronto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="じゃかぽん,トロント,バンクーバー,情報,カナダ,Canada,Toronto,Vancouver,ワーホリ,スーパー,図書館,カフェ,ニュース,危険,emaple,kijiji,ワーホリシロップ,英会話,海外生活,おすすめ,RyoNakano,JAPAN,日本,海外生活,ノマド,観光,生活,人気" />
+    <title>じゃかぽん</title>
+    <link rel="ress.css" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navi">
+          <p>
+            <a class="a one" href="#top">
+              <i class="fas fa-home fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a two" href="#webjump">
+              <i class="fas fa-laptop fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a three" href="#gjump">
+              <i class="fas fa-shopping-cart fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a extra" href="#enjump">
+              <i class="far fa-comments fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a four" href="#lijump">
+              <i class="fas fa-book-reader fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a five" href="#cajump">
+              <i class="fas fa-coffee fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a six" href="#sijump">
+              <i class="fas fa-hiking fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a seven" href="#instajump">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a eight" href="#twijump">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a nine" href="#youjump">
+              <i class="fab fa-youtube fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a ten" href="#scjump">
+              <i class="fas fa-newspaper fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a eleven" href="#dajump">
+              <i class="fas fa-exclamation-triangle fa-2x"></i>
+            </a>
+          </p>
+          <p>
+            <a class="a twelve" href="mailto:tennis.nakano.love@gmail.com?　subject=お問い合わせ&amp;body=要望または提案は以下へお願いします。">
+              <i class="fas fa-envelope fa-2x"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="menun">
+        <label for="menu_bar01">M E N U</label>
+        <input type="checkbox" id="menu_bar01" class="accordion"/>
+        <ul id="links01">
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#webjump">WEBサイト</a></li>
+          <li><a href="#gjump">Grocery Store</a></li>
+          <li><a href="#enjump">オンライン英会話</a></li>
+          <li><a href="#lijump">Library</a></li>
+          <li><a href="#cajump">Cafe</a></li>
+          <li><a href="#sijump">Sightseeing</a></li>
+          <li><a href="#instajump">Instagram</a></li>
+          <li><a href="#twijump">Twitter ~<i class="fas fa-tools"></i> ~</a></li>
+          <li><a href="#youjump">Youtube ~ <i class="fas fa-tools"></i> ~</a></li>
+          <li><a href="#scjump">News</a></li>
+          <li><a href="#dajump">Dangerous Place</a></li>
+          <li><a href="mailto:tennis.nakano.love@gmail.com?　subject=お問い合わせ&amp;body=要望または提案は以下へお願いします。">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="top-wrapper" id="top">
+      <div class="container">
+        <h1>じゃ<span>か</span>ぽん</h1>
+        <p>じゃ<span>か</span>ぽん(Ja<span>Ca</span>Pon)はカナダ在住の方向けに有益な情報を提供します</p>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="menu">
+          <ul class="ul">
+            <li class="blue li"><a class="a" href="#webjump">WEBサイト</a></li>
+            <li class="pink li"><a class="a" href="#gjump">Grocery Store</a></li>
+            <li class="redi li"><a class="a" href="#enjump">Online英会話</a></li>
+            <li class="cherry li"><a class="a" href="#lijump">Library</a></li>
+            <li class="pi li"><a class="a" href="#cajump">Cafe</a></li>
+            <li class="orenge li"><a class="a" href="#sijump">Sightseeing</a></li>
+            <li class="red li"><a class="a" href="#instajump">Instagram</a></li>
+            <li class="sky li"><a class="a" href="#twijump">Twitter</a></li>
+            <li class="gre li"><a class="a" href="#youjump">Youtube</a></li>
+            <li class="pur li"><a class="a" href="#scjump">News</a></li>
+            <li class="yellow li"><a class="a" href="#dajump">Dangerous</a></li>
+            <li class="ye li"><a class="a" href="mailto:tennis.nakano.love@gmail.com?　subject=お問い合わせ&amp;body=要望または提案は以下へお願いします。">Contact Us</a></li
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="web-site">
+      <div class="container">
+        <div class="web-top">
+          <h1 id="webjump"><i class="fas fa-laptop"></i> WEBサイト <i class="fas fa-laptop"></i></h1>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZOgRQbWAAAlTF1?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">e-Maple</p>
+              <p>留学や旅行、ワーキングホリデー、移民など様々な情報を発信するサイト。カナダのほぼ全地域で利用できる。</p>
+              <a href="http://www.e-maple.net/">e-Mapleへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZOqPJ2XYAcQ1cp?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">kijiji</p>
+              <p>e-Mapleと同様のサービスを利用することができ、そのため現地の人と英語でシェアハウスや仕事を探すことができます。</p>
+              <a href="https://www.kijiji.ca/?ula=true">kijijiへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZOsJO5WsAYfVU-?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">craigslist</p>
+              <p>kijijiとほぼ同じコンテンツ。情報量は他に比べて多いため目的は達成しやすいです。</p>
+              <a href="https://toronto.craigslist.org/">craigslistへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZOu3h1XsAALBCv?format=jpg&name=small">
+            <div class="text">
+              <p class="site">rentfaster</p>
+              <p>家を最速で見つけるにはこのサイト。自分にあった物件をマップを検索や周辺の詳細、宿泊施設を見つけることができます。</p>
+              <a href="https://www.rentfaster.ca/renters/">rentfasterへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Eaq_4snWAA0Ewr8?format=jpg&name=240x240">
+            <div class="text">
+              <p class="site">Monster</p>
+              <p>Monsterでは履歴書のテンプレートをダウンロードする事ができます。仕事探しの際にあると便利です。</p>
+              <a href="https://www.monster.com/career-advice/cover-letter-resume/resume-samples?pg=1">Monsterへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EatdUNyXkAAYyy-?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">urban dictionary</p>
+              <p>スラングを中心とした辞書です。新しいスラングが生まれると同時に追加されるのでとても便利です。</p>
+              <a href="https://www.urbandictionary.com/define.php?term=The%20Urban%20Dictionary">urban dictionaryへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Eb9ZN34XQAABquH?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Cambridge Dictionary</p>
+              <p>まずは日本の辞書やGoogle翻訳からこれに変えよう。英語学習に最適な辞書。</p>
+              <a href="https://dictionary.cambridge.org/">Cambridge Dictionaryへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Eaku668XkAEcDdU?format=jpg&name=240x240">
+            <div class="text">
+              <p class="site">ワーホリシロップ</p>
+              <p>カナダにワーホリに来る前に一度は見た事があるサイト。VISA関連の情報がたくさんあります。</p>
+              <a href="https://workingholiday-syrup.com/">ワーホリシロップへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EbguoAzWsAQSq4u?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">じゃ<span>か</span>ぽん</p>
+              <p>このサイトさえあれば生きていける、多分。とりあえずホームに追加しとこう。</p>
+              <a href="">じゃ<span>か</span>ぽんへ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grocery-store">
+      <div class="container">
+        <div class="groce-top">
+          <h1 id="gjump"><i class="fas fa-shopping-cart"></i> Grocery Store <i class="fas fa-shopping-cart"></i></h1>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDRVnWoAIc36G?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Loblaws</p>
+              <p>カナダ最大規模で国内に2000店舗以上を構えており、イオンのように自社ブランドとして格安のno nameや品質にこだわったPresident's Choiceがあります。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDRVoXkAE4yJV?format=jpg&name=small">
+            <div class="text">
+              <p class="site">NO FRILLS</p>
+              <p>Loblawsの系列でカナダに200店舗以上を構えており、野菜が新鮮でお手頃価格で購入することができます。店舗それぞれに店長の名前がついています。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDRVnWkAEWSyq?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Sobeys</p>
+              <p>カナダで２番目の規模を誇る大手スーパーマーケットで、野菜や果物が新鮮な点と品質重視のComplimentsと安価なS!gnalというオリジナルブランドがあります。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDRVoWkAA2VoM?format=jpg&name=small">
+            <div class="text">
+              <p class="site">FreshCo</p>
+              <p>Sobeys系列の格安スーパーマーケットで、店舗数は少ないが新しいお店なのでこれからどんどん店舗数も増えていくと思われます。セールでは生鮮食品などがお買い得になります。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDUwlXYAEtQbO?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Metro</p>
+              <p>カナダで第3位の大手です。主にケベックとオンタリオ州で運営され、総菜カウンターや、魚屋、肉屋、花屋、Tim Hortonsなどを併設しています。さらにMetroは24時間営業です！！</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDUwjWAAEJWAn?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Food Basics</p>
+              <p>メトロ系列の格安店で、ドリンクやお菓子、日用品などのまとめ買いセールをよくやっており、薬局を併設している店舗もあります。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDUwkWkAIVz9V?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Longo's</p>
+              <p>上質なお肉やお魚をそろえており、他の大手３社と比べると高価格となっています。さらに総菜の日替わりセールをやっており、$8.99でボリュームたっぷりのピザやリブなどが買えます。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDUwjXsAAS2QY?format=jpg&name=small">
+            <div class="text">
+              <p class="site">McEwan</p>
+              <p>トロントの有名シェフがプロデュースしている高級グルメスーパーで、オリジナルのケータリング商品や総菜系が豊富です。特にデザートコーナーがおすすめで、ケーキやドーナツは人気店からから取り寄せています。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDXMXXkAAkzWX?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Whole foods market</p>
+              <p>オーガニック系商品の販売を専門とするチェーン店で、広い店内には健康サプリメントやせっけんなどの衣料品も取り揃えており、オーガニックやグルテンフリーの商品が並び、体に優しい商品を取り扱っています。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDXMZWsAE1dYm?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Pusateri's</p>
+              <p>輸入製品中心の、高級グルメスーパーマーケットでパスタ類、スパイス、お肉、チーズなど特にイタリア系の食材が豊富です。特徴としてデザートが絶品でマカロンやタルト、ケーキなどが売られており、カフェも併設されていています。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDXMZWoAE6Asp?format=jpg&name=small">
+            <div class="text">
+              <p class="site">St.Lawrence　Market</p>
+              <p>200年以上もの歴史がある赤いレンガの建物で、この中では120軒ほどのお店が営業しており、肉、魚、野菜、果物などの生鮮食品や、チーズやデリ等、良質の食材が売られています。観光にも買い物にも最適です。</p>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EayDXMbXsAMz1-G?format=jpg&name=small">
+            <div class="text">
+              <p class="site">convenience store</p>
+              <p>コンビニ。シンプルに高い。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="English">
+      <div class="container">
+        <div class="en-top">
+          <h1 id="enjump"><i class="far fa-comments"></i>オンライン英会話<i class="far fa-comments"></i></h1>
+          <p>Speaking。Vocabulary。Listening。英会話はこの三つの能力を伸ばすのに１番効率的です。無料体験有のオンライン英会話を集めておいたので今後の英語人生にお役立てしてください。</p>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hoaCWAAI4gHS?format=jpg&name=small">
+            <div class="text">
+              <p class="site">AQUES</p>
+              <p>マンツーマンでお試しレッスン50分x5回無料。朝５時～深夜２５時まで毎日やっているためいつでもどこでも受講できます。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+9ALNIY+4D4Y+614CY" rel="nofollow">AQUES英会話へ</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3BHZAX+9ALNIY+4D4Y+614CY">
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hoaDXsAE42BH?format=jpg&name=small">
+            <div class="text">
+              <p class="site">for IELTS</p>
+              <p>IELTSの4技能全ての対策があるオンライン英会話。留学の最終目標としてIELTSを掲げている方や英語力を伸ばそうとしている方向け。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+9CZDY2+4H0E+5YRHE" rel="nofollow">Universal Speakingへ</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3BHZAX+9CZDY2+4H0E+5YRHE">
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hoaCWAAEsCbZ?format=jpg&name=360x360">
+            <div class="text">
+              <p class="site">for 口頭英作文</p>
+              <p>口頭英作文と音読により英語脳やディスカッション能力を鍛えれるオンライン英会話。担当の教師が付き添って教えてくれます。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+9CDYCA+4JKM+5YJRM" rel="nofollow">ウィリーズ英語塾へ</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3BHZAX+9CDYCA+4JKM+5YJRM" alt="">
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hoaDXsAAVXVU?format=jpg&name=small">
+            <div class="text">
+              <p class="site">Quality English</p>
+              <p>4倍速で英語脳を作る「カランメソッド」の正式認定校で歴史が深く、1300人の教師がいるオンライン英会話。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+99ESBE+4HHM+61RIA" rel="nofollow">高品質英会話へ</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3BHZAX+99ESBE+4HHM+61RIA" alt="">
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hrzXXsAE6VY7?format=jpg&name=360x360">
+            <div class="text">
+              <p class="site">ネイティブキャンプ</p>
+              <p>業界初の予約不要で24時間365日好きな時にレッスンができるオンライン英会話。無料の時でも全てのレッスンが無料。課金後は定額レッスン無制限。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+8RJS62+35VG+5YJRM" rel="nofollow">ネイティブキャンプへ</a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3BHZAX+8RJS62+35VG+5YJRM" alt="">
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/Ec2hrzXXoAICkWP?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">Cambly</p>
+              <p>今超人気のCambly。24時間いつでもどこでも世界中の英語話者と話せるオンライン英会話。1度は見たことがあるやつ。</p>
+              <a class="pop pip" href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+9QOCUY+428Q+62U36" rel="nofollow">Camblyへ</a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=3BHZAX+9QOCUY+428Q+62U36" alt="">
+            </div>
+          </div>
+          <!--
+          <div class="content">
+            <img class="icon" src="">
+            <div class="text">
+              <p class="site">選べないという方向け</p>
+              <p>ランダム</p>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="library">
+      <div class="container">
+        <div class="lib-top">
+          <h1 id="lijump"><i class="fas fa-book-reader"></i> Library <i class="fas fa-book-reader"></i></h1>
+          <p>カナダの図書館は日本と比べて快適で多くの人々が訪れます。ほぼ全ての図書館にWiFiが設置されており、英語学習用のESLの教材もあり、英語学習などに最適な場所です。</p>
+        </div>
+        <div class="long-contents show">
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Toronto Reference Library</p>
+              <p>ダウンタウンでは最大級の規模で、設備も充実しているため数多くの留学生や大学生が勉強しています。この図書館の中にはカフェや小さな滝があり、パソコンも無料で使用できるのでとてもおすすめです。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>789 Yonge Street, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="http://www.torontopubliclibrary.ca/detail.jsp?R=LIB018"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIxxiWsAIFJUi?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZP47IEX0AE117L?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Thomas Fisher Rare Book Library</p>
+              <p>UofT（トロント大学）の図書館の一つでSt. George　street近くの大きな建物の中にあります。図書館自体は大きくなく、図書館と博物館が合わさったような施設です。中に入り、許可を貰えば360°本に囲まれた場所から写真撮影することができます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>120 St.George Street, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://fisher.library.utoronto.ca"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMXK_WoAIJYAs?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZP47IDWkAEK0Yt?format=jpg&name=900x900">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">The Great Library</p>
+              <p>ダウンタウン中心部のOsgoode Hallの中に位置し、事務弁護士協会が管理する図書館で、法律系の書籍がずらりと並んでいます。中でもおすすめはThe American Roomで、突然現れる古く趣のある部屋は、本だけでなく床やランプなども趣があります。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>130 Queen St W, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="http://www.lsuc.on.ca/greatlibrary.aspx"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI86FWAAAXZBm?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZP-Qg-XkAAV7-Z?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Vancouver Public Library</p>
+              <p>パレスチナ出身の建築家によって美しくデザインされた図書館です。本館以外にも21個の分館があり、40万人以上が利用者として登録しているかなりカナダ最大級の図書館です。中にはカフェなどたくさんのお店があり、日本の漫画やDVDまであります。注：この図書館では利用者登録をしなければWiFiは使えません。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>350 W Georgia St, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.vpl.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMcSuXQAAdxWQ?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZP47IDXQAE6BjX?format=jpg&name=small">
+            </div>
+          </div>
+        </div>
+        <!-- ~414px -->
+        <div class="long_contents">
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EZP47IEX0AE117L?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Toronto Reference Library</p>
+                  <p>ダウンタウンでは最大級の規模で、設備も充実しているため数多くの留学生や大学生が勉強しています。この図書館の中にはカフェや小さな滝があり、パソコンも無料で使用できるのでとてもおすすめです。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>789 Yonge Street, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="http://www.torontopubliclibrary.ca/detail.jsp?R=LIB018"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIxxiWsAIFJUi?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EZP47IDWkAEK0Yt?format=jpg&name=900x900">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Thomas Fisher Rare Book Library</p>
+                  <p>UofT（トロント大学）の図書館の一つでSt. George　street近くの大きな建物の中にあります。図書館自体は大きくなく、図書館と博物館が合わさったような施設です。中に入り、許可を貰えば360°本に囲まれた場所から写真撮影することができます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>120 St.George Street, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://fisher.library.utoronto.ca"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMXK_WoAIJYAs?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EZP-Qg-XkAAV7-Z?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">The Great Library</p>
+                  <p>ダウンタウン中心部のOsgoode Hallの中に位置し、事務弁護士協会が管理する図書館で、法律系の書籍がずらりと並んでいます。中でもおすすめはThe American Roomで、突然現れる古く趣のある部屋は、本だけでなく床やランプなども趣があります。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>130 Queen St W, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="http://www.lsuc.on.ca/greatlibrary.aspx"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI86FWAAAXZBm?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EZP47IDXQAE6BjX?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Vancouver Public Library</p>
+                  <p>パレスチナ出身の建築家によって美しくデザインされた図書館です。本館以外にも21個の分館があり、40万人以上が利用者として登録しているかなりカナダ最大級の図書館です。中にはカフェなどたくさんのお店があり、日本の漫画やDVDまであります。注：この図書館では利用者登録をしなければWiFiは使えません。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>350 W Georgia St, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.vpl.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMcSuXQAAdxWQ?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cafe">
+      <div class="container">
+        <div class="cafe-top">
+          <h1 id="cajump"><i class="fas fa-coffee"></i> Cafe <i class="fas fa-coffee"></i></h1>
+          <p>TorontoやVancouverのオシャレなCafe</p>
+        </div>
+        <h2 class="list">Toronto</h2>
+        <div class="cafe-contents">
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Balzac's</p>
+              <p>Distillery Districtの中にあり、ビクトリア様式の産業建築により建てられた固定史跡で、店内にはシャンデリアなどの古く美しい装飾がされており、トロントの芸術と文化に触れる事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <p>1 Trinity St, Toronto, ON</p>
+              <h4>+1 416-207-1709</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2mtRWAAIqzoJ?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Dineen Coffee Company</p>
+              <p>明るくモダンな雰囲気のカフェ。地元で人気の美しいラテアートやデザートを楽しむ事ができます。また店外には大きなパティオがあり、天気の良い日には外でコーヒーを楽しむ事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <p>140 Yonge St, Toronto, ON</p>
+              <h4>+1 416-900-0949</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2mtTXkAA2d85?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Le Petit Dejeuner</p>
+              <p>ダウンタウンにあるベルギー風のカフェ。このカフェはベルギーの朝食を楽しむ事ができます。行った人の多くが最高のブランチと評する人気店でヴィーガンの方向けの料理もあります。</p>
+            </div>
+            <div class="long-middle">
+              <p>191 King St E, Toronto, ON</p>
+              <h4>+1 416-703-1560</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2mtTWkAAG0Ii?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Jimmy's Coffee</p>
+              <p>レトロな雰囲気の店内と屋外のパティオを楽しむ事ができるカフェです。ブランチ用の料理も豊富でケンジントンマーケットの中にあることもあり、休日にはかなり混雑します。</p>
+            </div>
+            <div class="long-middle">
+              <p>191 Baldwin St Kensington Market, Toronto, ON</p>
+              <h4>+1 647-352-5466</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2mtSXsAUQ3X2?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Fika</p>
+              <p>オシャレな外装、本が敷き詰められた店内、インスタ映えなコーヒーや料理、トロントで一押しのカフェです。店外にはパティオがあり、メニューは常に変わるため何度行っても楽しめます。</p>
+            </div>
+            <div class="long-middle">
+              <p>28 Kensington Ave, Toronto, ON</p>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2ohkXkAA8ZlO?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Nadege</p>
+              <p>マカロンやスイーツが中心のかわいいカフェ。フレンチな雰囲気の店内でインスタ映えなスイーツと夏にはオリジナルのアイスクリームを購入できます。スイーツ好きには天国のようなカフェ。</p>
+            </div>
+            <div class="long-middle">
+              <p>780 Queen St W, Toronto, ON</p>
+              <h4>+1 416-368-2009</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2ohlXQAE5G9S?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Cafe Landwer</p>
+              <p>朝食からディナーまで楽しめる地中海料理も楽しめるカフェ。ヘルシーな料理が多く、店内のジュースは全て絞りたてで、新鮮なフルーツや蜂蜜のタルト、ギリシャヨーグルトを楽しむ事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <p>165 University Ave, Toronto, ON</p>
+              <h4>+1 647-748-1165</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2ohpX0AIJR7I?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Delysees</p>
+              <p>本格的なフランスのスイーツを楽しめるカフェ。マカロンやジェラート、エクレア、特徴的な形のチョコレート、を購入できます。オシャレな店内と可愛いスイーツでインスタ映え間違いなし。</p>
+            </div>
+            <div class="long-middle">
+              <p>66 Wellington West, Toronto, ON</p>
+              <h4>+1 416-360-0095</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2oh4XQAAR9i1?format=jpg&name=medium">
+            </div>
+          </div>
+        </div>
+        <h2 class="list">Vancouver</h2>
+        <div class="cafe-contents">
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Purebread</p>
+              <p>数多くのパンを楽しめるカフェ。店内に入ると焼きたてのパンの香ばしい香りとコーヒーの香りが混ざり合った心地よい香りを感じる事ができます。パンの品揃えは一年間通っても食べ切れないほど。</p>
+            </div>
+            <div class="long-middle">
+              <p>159 Hastings St W, Vancouver, BC</p>
+              <h4>+1 604-563-8060</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2s6wXsAAmDgx?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Thierry</p>
+              <p>オシャレな店内と可愛いマカロンやケーキが中心のカフェ。店内ではパティシエが作った本格的なチョコレートやマカロン、ケーキを購入でき、テラス席でも楽しめます。</p>
+            </div>
+            <div class="long-middle">
+              <p>1059 Alberni St Thurlow/Burrard, Vancouver, BC</p>
+              <h4>+1 604-608-6870</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2s63XkAAcq3p?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Cafe Medina</p>
+              <p>地中海のブランチを楽しめるオシャレなカフェ。クリエイティブな料理と地中海の朝食をオシャレな店内で味わうことができます。地元の人から愛されるワッフルも是非食べてみたいですね。</p>
+            </div>
+            <div class="long-middle">
+              <p>780 Richards St, Vancouver, BC</p>
+              <h4>+1 604-879-3114</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2s8jWkAcBO9a?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Bel Cafe</p>
+              <p>美しいラテアートと綺麗でオシャレなカフェ。本格的なコーヒーとデザートで優雅な時間を楽しめます。近くのアートギャラリーもおすすめです。</p>
+            </div>
+            <div class="long-middle">
+              <p>801 Georgia St W, Vancouver, BC</p>
+              <h4>+1 604-673-7000</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2s8mXsAg-bQP?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Trees Organic Coffee</p>
+              <p>インスタ映えなケーキとコーヒーを楽しめるカフェ。19世紀を感じられる店内とオシャレな美味しいスイーツで人気のカフェです。中でもチーズケーキが人気で店内はいつも混雑しています。</p>
+            </div>
+            <div class="long-middle">
+              <p>321 Water St, Vancouver, BC</p>
+              <h4>+1 604-633-3880</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2uOgX0AEu6ug?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Brioche Urban Baking</p>
+              <p>イタリアンな朝食〜ディナーまで楽しめるカフェ。フレッシュなサラダやイタリアンパスタ、焼き立てのトーストをバンクーバーのダウンタウンの中心で味わう事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <p>401 Corfova St W, Vancouver, BC</p>
+              <h4>+1 604-682-4037</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2uOgX0AAoO6k?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Cafe Crepe</p>
+              <p>オシャレネオンとインスタ映えなクレープのカフェ。朝食やブランチ用のクレープもあり、コーヒーと一緒に楽しめます。支店がトロントにもあるのでトロント在住者にもおすすめ</p>
+            </div>
+            <div class="long-middle">
+              <p>1032 Robson St, Vancouver, BC</p>
+              <h4>+1 604-488-0045</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2uOfWsAYPkuU?format=jpg&name=medium">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Nosh</p>
+              <p>バンクーバーで人気な野菜中心のカフェ。地元で多くの人々に愛されており、スタッフのサービスも良く、料理もインスタ映えするヘルシーな料理がたくさんあるお店。</p>
+            </div>
+            <div class="long-middle">
+              <p>510 Georgia St W 101, Vancouver, BC</p>
+              <h4>+1 604-449-6674</h4>
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EZy2uOpWsAAkZf5?format=jpg&name=medium">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 広告468px -->
+    <div class="adv">
+      <a href="https://px.a8.net/svt/ejp?a8mat=35LUAE+2HB2AI+3250+6I9N5" rel="nofollow">
+        <img border="0" width="728" height="90" alt="" src="https://www27.a8.net/svt/bgt?aid=190815638150&wid=002&eno=01&mid=s00000014274001093000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=35LUAE+2HB2AI+3250+6I9N5" alt="">
+    </div>
+    <div class="adva">
+      <a href="https://px.a8.net/svt/ejp?a8mat=35LUAE+2HB2AI+3250+6OWU9" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www25.a8.net/svt/bgt?aid=190815638150&wid=002&eno=01&mid=s00000014274001124000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35LUAE+2HB2AI+3250+6OWU9" alt="">
+    </div>
+    <div class="sightseeing">
+      <div class="container">
+        <div class="sight-top">
+          <h1 id="sijump"><i class="fas fa-hiking"></i> Sightseeing <i class="fas fa-hiking"></i></h1>
+        </div>
+        <h2 class="listsi">Toronto</h2>
+        <div class="sight-contents">
+          <div class="long-content">
+            <div class="long-text longt">
+              <p class="long-title">CN Tower</p>
+              <p>CNタワーは553メートルの高さで有名なランドマークとしてダウンタウンにそびえており、最近まで世界で最も高い自立式の建造物でした。上空447メートルの展望台からは、ナイアガラの滝とニューヨーク州まで視界が広がり、街とオンタリオ湖の景色を眺めることができます。Glass Floorでは、真下の景色をガラス越しに見下ろす事ができます。上空351メートルのレストランでは、美味しい食事と座ったまま360度の最高の景色を楽しめます。</p>
+            </div>
+            <div class="long-middle longm">
+              <div class="long-up">
+                <p>301 Front Street West, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.cntower.ca/intro.html"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIxxiXsAEiusY?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area longa">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLgj2XgAASpA5?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Royal Ontario Museum</p>
+              <p>ROMとして知られるロイヤルオンタリオ博物館は、国際的な評価を得ているカナダ有数の博物館です。世界中の多種多様な時代の自然史、芸術、文化を網羅する優れたコレクションを展示しており、建物も奥町的な形をしていて現在トロントで最も有名な建物の1つです。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>100 Queen's Park, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.rom.on.ca/en"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIxxiWkAAKJLx?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLgj1X0AAfW_l?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Ripley's Aquarium of Canada</p>
+              <p>Ripley's Aquarium of Canadaは、多くの種類の海洋生物を展示しており、トロントで人気な観光地の1つです。この水族館の名所である巨大な水中トンネルでは、サメが空を飛んでいるかのように海の世界があなたの周りを行き交う様子を見ることができます。さらに、アカエイや小さなサメを実際に触り、鮫肌を体験する事もできます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>288 Bremner Boulevard, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.ripleyaquariums.com/canada/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIxxiXsAAXScX?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLignWAAARVDz?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Art Gallery of Ontario</p>
+              <p>オンタリオ美術館（AGO）は、北米で最大級の美術館の1つで、95,000点以上のコレクションには、ヨーロッパの傑作から現代美術まで、世界中の作品が含まれています。また、季節限定の展示も年間を通じて行われています。AGOは、市内中心部の古い建築とモダンな建築が調和している特徴的な建物で、隣にはオンタリオ美術大学の、鉛筆のようにデザインされたモニュメントが建てられています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>317 Dundas Street West, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://ago.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMXK_WAAAu6YX?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLigsWsAE_X6l?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Niagara Falls</p>
+              <p>ナイアガラの滝は、世界で最大の、最も美しく、最も有名な滝と言われています。ナイアガラのカナダ側では、渓谷のに沿って滝の上に歩道が伸びており、壮大な景色を橋の上から見れます。また、夜のナイアガラの滝もライトアップされ、とても美しいです。滝の下では、ナイアガラ川の峡谷の間で船に乗る事ができ、水がオンタリオ湖に流れ込む様子を船の上から見れます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>Niagara Falls, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.niagarafallstourism.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI6VXWsAAc9fG?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EcTV39gWoAEGbVN?format=jpg&name=large">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Toronto Zoo</p>
+              <p>Toronto Zooには、約5,000匹の動物が生息し、非常に多種多様な動物を見る事ができます。動物園はいくつかのセクションに分かれており、それぞれが地球の主要な地域を表しています。その中でも、ゴリラ熱帯雨林や、シロクマが登場する北極点、グレートバリアリーフの地域の動物は必見です。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>361A Old Finch Road, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="http://www.torontozoo.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI86WXsAEWIuN?format=jpg&name=small">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLk3wX0AA3N8o?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Casa Loma</p>
+              <p>カサ・ローマでは美しく手入れされた敷地内に立つ中世の城を感じる事ができます。30を超えるバス​​ルームや100室近い客室を備えたこの建物は、現在は博物館になっており、豪華絢爛に装飾されたスイートルームや秘密の通路、トンネル、塔、厩舎、敷地内庭園は、どれも中世を感じる事ができる素晴らしいものとなっています。　ps.最近は幽霊が出るとの噂も....</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>1 Austin Terrace, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://casaloma.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgJAC4X0AEt_Di?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLnX-XgAAyVeL?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">St. Lawrence Market</p>
+              <p>セントローレンスマーケットには、様々な食べ物、魚、花、特産品を販売する様々なお店が立ち並んでいます。この建物は1850年に建てられ、公共の会場やコンサート会場として機能してきました。その後の1967年に復元され、古い多くの魅力を持ち、市場に独特の雰囲気をもたらしています。内部には、古くからそのままの形で大階段とガス灯のシャンデリアが残されています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>92 Front Street East, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="http://www.stlawrencemarket.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIzf9XgAIkTGP?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLnX8XkAkoyh5?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Distillery District</p>
+              <p>Distillery Districtは復元された歴史的地区で、流行のエンターテインメントとショッピング地区として日々賑わっています。ここではさまざまなエンターテイメントイベントが開催され、クリスマスマーケットとライトフェスティバルは必見です。Distillery Districtの名物であるホットチョコレートはどの時期でも購入できます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>9 Trinity Street, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.thedistillerydistrict.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMXK_XgAApkK6?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLppxXQAAlqMR?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">High Park</p>
+              <p>High Parkは公園の中に、サンクンガーデン、ハンギングバスケットガーデン、自然歩道、自然の池、小川がある広大な公園です。この公園内には動物園があり、多くの動物が生息しています。他のエリアには、プールや遊具、ピクニックエリア、列車のツアーなどがあります。毎年、「シェイクスピアインハイパーク」として知られる公園内の野外劇場で、7月と8月の間、パフォーマンスを行っています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>1873 Bloor Street West,Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="http://www.highparktoronto.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI6VdXgAEcw7D?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLppzWsAARuws?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Toronto Islands</p>
+              <p>トロント諸島は、ダウンタウンから約1kmのところにあり、島には美しい自然の散歩道があり、ボート、セーリング、水泳、その他のアウトドアアクティビティも楽しめます。夏には、トロント諸島の大部分が野外イベントの会場になります。トロント諸島に渡った後は、トロントアイランド・フェリー・サービスにより、諸島のそれぞれに移動する事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>Toronto Islands, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.torontoisland.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI86XXsAEOm6N?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLsTWXYAIc7fD?format=jpg&name=360x360">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Ontario Science Centre</p>
+              <p>Ontario Science Centreは幅広い年齢の人々が楽しめる展示がたくさんあります。建築家レイモンドモリヤマによって設計されたこのモダンな建物の中では、技術、通信、光学、生物学、物理学、宇宙旅行、気象学などの最新の技術が、魅力的かつ想像力豊かに提示されています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>770 Don Mills Road, Toronto, ON</p>
+                <a class="pop btn-flat-simple" href="https://www.ontariosciencecentre.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgLQktWkAYpdNk?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLsT5WkAAeU1R?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Graffiti Alley</p>
+              <p>トロントのダウンタウンにあるこの路地は、たびたび論争の種やニュースとして取り上げられる場所です。グラフィティーにより装飾された出入り口や道路では、ストリートアートを感じます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>Graffiti Alley, Toronto, ON</p>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIzgEWkAAht0a?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLu8LWsAI0Fst?format=jpg&name=small">
+            </div>
+          </div>
+        </div>
+        <!-- 414px~ -->
+
+        <div class="long_contents">
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLgj2XgAASpA5?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">CN Tower</p>
+                  <p>CNタワーは553メートルの高さで有名なランドマークとしてダウンタウンにそびえており、最近まで世界で最も高い自立式の建造物でした。上空447メートルの展望台からは、ナイアガラの滝とニューヨーク州まで視界が広がり、街とオンタリオ湖の景色を眺めることができます。Glass Floorでは、真下の景色をガラス越しに見下ろす事ができます。上空351メートルのレストランでは、美味しい食事と座ったまま360度の最高の景色を楽しめます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>301 Front Street West, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.cntower.ca/intro.html"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIxxiXsAEiusY?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLgj1X0AAfW_l?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Royal Ontario Museum</p>
+                  <p>ROMとして知られるロイヤルオンタリオ博物館は、国際的な評価を得ているカナダ有数の博物館です。世界中の多種多様な時代の自然史、芸術、文化を網羅する優れたコレクションを展示しており、建物も奥町的な形をしていて現在トロントで最も有名な建物の1つです。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>100 Queen's Park, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.rom.on.ca/en"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIxxiWkAAKJLx?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLignWAAARVDz?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Ripley's Aquarium of Canada</p>
+                  <p>Ripley's Aquarium of Canadaは、多くの種類の海洋生物を展示しており、トロントで人気な観光地の1つです。この水族館の名所である巨大な水中トンネルでは、サメが空を飛んでいるかのように海の世界があなたの周りを行き交う様子を見ることができます。さらに、アカエイや小さなサメを実際に触り、鮫肌を体験する事もできます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>288 Bremner Boulevard, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.ripleyaquariums.com/canada/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIxxiXsAAXScX?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLigsWsAE_X6l?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Art Gallery of Ontario</p>
+                  <p>オンタリオ美術館（AGO）は、北米で最大級の美術館の1つで、95,000点以上のコレクションには、ヨーロッパの傑作から現代美術まで、世界中の作品が含まれています。また、季節限定の展示も年間を通じて行われています。AGOは、市内中心部の古い建築とモダンな建築が調和している特徴的な建物で、隣にはオンタリオ美術大学の、鉛筆のようにデザインされたモニュメントが建てられています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>317 Dundas Street West, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://ago.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMXK_WAAAu6YX?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EcTV39gWoAEGbVN?format=jpg&name=large">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Niagara Falls</p>
+                  <p>ナイアガラの滝は、世界で最大の、最も美しく、最も有名な滝と言われています。ナイアガラのカナダ側では、渓谷のに沿って滝の上に歩道が伸びており、壮大な景色を橋の上から見れます。また、夜のナイアガラの滝もライトアップされ、とても美しいです。滝の下では、ナイアガラ川の峡谷の間で船に乗る事ができ、水がオンタリオ湖に流れ込む様子を船の上から見れます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>Niagara Falls, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.niagarafallstourism.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI6VXWsAAc9fG?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLk3wX0AA3N8o?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Toronto Zoo</p>
+                  <p>Toronto Zooには、約5,000匹の動物が生息し、非常に多種多様な動物を見る事ができます。動物園はいくつかのセクションに分かれており、それぞれが地球の主要な地域を表しています。その中でも、ゴリラ熱帯雨林や、シロクマが登場する北極点、グレートバリアリーフの地域の動物は必見です。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>361A Old Finch Road, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="http://www.torontozoo.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI86WXsAEWIuN?format=jpg&name=small">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLnX-XgAAyVeL?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Casa Loma</p>
+                  <p>カサ・ローマでは美しく手入れされた敷地内に立つ中世の城を感じる事ができます。30を超えるバス​​ルームや100室近い客室を備えたこの建物は、現在は博物館になっており、豪華絢爛に装飾されたスイートルームや秘密の通路、トンネル、塔、厩舎、敷地内庭園は、どれも中世を感じる事ができる素晴らしいものとなっています。　ps.最近は幽霊が出るとの噂も....</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>1 Austin Terrace, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://casaloma.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgJAC4X0AEt_Di?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLnX8XkAkoyh5?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">St. Lawrence Market</p>
+                  <p>セントローレンスマーケットには、様々な食べ物、魚、花、特産品を販売する様々なお店が立ち並んでいます。この建物は1850年に建てられ、公共の会場やコンサート会場として機能してきました。その後の1967年に復元され、古い多くの魅力を持ち、市場に独特の雰囲気をもたらしています。内部には、古くからそのままの形で大階段とガス灯のシャンデリアが残されています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>92 Front Street East, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="http://www.stlawrencemarket.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIzf9XgAIkTGP?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLppxXQAAlqMR?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Distillery District</p>
+                  <p>Distillery Districtは復元された歴史的地区で、流行のエンターテインメントとショッピング地区として日々賑わっています。ここではさまざまなエンターテイメントイベントが開催され、クリスマスマーケットとライトフェスティバルは必見です。Distillery Districtの名物であるホットチョコレートはどの時期でも購入できます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>9 Trinity Street, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.thedistillerydistrict.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMXK_XgAApkK6?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLppzWsAARuws?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">High Park</p>
+                  <p>High Parkは公園の中に、サンクンガーデン、ハンギングバスケットガーデン、自然歩道、自然の池、小川がある広大な公園です。この公園内には動物園があり、多くの動物が生息しています。他のエリアには、プールや遊具、ピクニックエリア、列車のツアーなどがあります。毎年、「シェイクスピアインハイパーク」として知られる公園内の野外劇場で、7月と8月の間、パフォーマンスを行っています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>1873 Bloor Street West,Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="http://www.highparktoronto.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI6VdXgAEcw7D?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLsTWXYAIc7fD?format=jpg&name=360x360">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Toronto Islands</p>
+                  <p>トロント諸島は、ダウンタウンから約1kmのところにあり、島には美しい自然の散歩道があり、ボート、セーリング、水泳、その他のアウトドアアクティビティも楽しめます。夏には、トロント諸島の大部分が野外イベントの会場になります。トロント諸島に渡った後は、トロントアイランド・フェリー・サービスにより、諸島のそれぞれに移動する事ができます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>Toronto Islands, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.torontoisland.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI86XXsAEOm6N?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLsT5WkAAeU1R?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Ontario Science Centre</p>
+                  <p>Ontario Science Centreは幅広い年齢の人々が楽しめる展示がたくさんあります。建築家レイモンドモリヤマによって設計されたこのモダンな建物の中では、技術、通信、光学、生物学、物理学、宇宙旅行、気象学などの最新の技術が、魅力的かつ想像力豊かに提示されています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>770 Don Mills Road, Toronto, ON</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.ontariosciencecentre.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgLQktWkAYpdNk?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLu8LWsAI0Fst?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Graffiti Alley</p>
+                  <p>トロントのダウンタウンにあるこの路地は、たびたび論争の種やニュースとして取り上げられる場所です。グラフィティーにより装飾された出入り口や道路では、ストリートアートを感じます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>Graffiti Alley, Toronto, ON</p>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIzgEWkAAht0a?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <h2 class="listsi">Vancouver</h2>
+        <div class="sight-contents">
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Stanley Park</p>
+              <p>バンクーバーのダウンタウンに隣接するStanley Parkは巨大な木々で覆われた緑豊かな半島で、舗装された護岸道が緑地を取り囲み、徒歩または自転車で探索する事ができます。春になると、公園の庭園や木が、桜色に染まり、シャクナゲなどの美しい色の変化も楽しめます。夏には、海のすぐそばにある80メートルの屋外プールが営業し始め、人気のスポットとして多くの人々に愛されています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>Vancouver, BC V6G 1Z4</p>
+                <a class="pop btn-flat-simple" href="https://vancouver.ca/parks-recreation-culture/stanley-park.aspx"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMam2XQAAMWrY?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLu8TXYAAhp4F?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Granville Island</p>
+              <p>元々は工業地帯だったGranville Islandは、独特の雰囲気でアーティストや雑貨屋、劇場、ギャラリー、レストランなどが数多く並んでいます。その他にもマーケットでは多種多様な果物や野菜、魚介類が販売されている人気のある観光スポットで、すぐに食べられるのも魅力の一つです。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>1441 Cartwright St, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://granvilleisland.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI6VeWsAIORAr?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLxFuXYAAe8Ge?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Grouse Mountain</p>
+              <p>Grouse Mountainでは冬と夏の両方で綺麗な景色を見る事ができます。特に、街の明かりが点灯している夜はより一層綺麗に見えます。Grouse Mountainのゴンドラは、街から頂上付近まで毎日運行しており、頂上では食事、アクティビティ、野生生物を一年中見る事ができます。冬のGrouse Mountainでは、屋外スケート、スノーシュー、スキー、スノーボード。夏は、ハイキングコースとなり、自然を満喫できます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>6400 Nancy Greene Way, North Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.grousemountain.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI86ZXYAAnnVw?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLxFzXYAArYsf?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Museum of Anthropology</p>
+              <p>人類学博物館は、世界中の文化を扱っていますが、特にカナダのブリティッシュコロンビアの先住民に重点を置いて展示しています。この博物館の建物は、もともと第二次世界大戦時代の砦の一部であったものをカナダの建築家アーサーエリクソンは、博物館に変えました。近くの大学のキャンパス内には、自然史に焦点を当てたビーティ生物多様性博物館、植栽と繊細な新渡戸日本庭園があるUBC植物園などがあります。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>6393 NW Marine Drive, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://moa.ubc.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgJAC3XkAczjeY?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLy0KXsAAz9yY?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Kitsilano Beach</p>
+              <p>Kitsilano Beachの砂浜は、友達と過ごしたり、屋外の温水海水プールで泳ぐことができるする場所です。ビーチや海岸に加えて、このエリアには多くのカフェやウォーキングスペースがあり、近くにショッピングエリアもあります。ビーチの東側にはバニエパークがあり、広大なスペースとバンクーバー海洋博物館があります。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>2305 Cornwall Ave, Vancouver, BC</p>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIzgDXQAAx2in?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacLy0KXQAEES2Y?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Gastown</p>
+              <p>バンクーバーで最も古いガスタウンでは、修復されたビクトリア朝の建物の中でレストラン、アートギャラリー、ショップを楽しめるエリアです。歴史的建造物、石畳の通り、鉄でできた街灯がガスタウンに独特の雰囲気を与えています。ガスタウンはジョンデイトンと呼ばれる男がカナダに到着し、1867年に誕生しました。また、ガスタウンの有名な右写真の時計は、15分ごとに蒸気式スチームクロックのチャイムを聞く事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>305 Water St, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.tourismvancouver.com/vancouver/neighbourhoods/gastown/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgIzgIXkAY9w9N?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL0l5XYAQQeb4?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Canada Place</p>
+              <p>Canada Placeでは特徴的で珍しい船のような建築構造が港にいるかのような雰囲気を作り出します。桟橋の先からは、パノラマの塔に広がる景色とカナダの美しい自然の魅力を感じられます。また、近くにはStanley Parkに向かって美しいウォーターフロントの道が続いています。さらに近くからは水上飛行機が離着陸し、巨大な海上コンテナ船が行き来しています。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>999 Canada Place, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.canadaplace.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMXK_XkAEV6Se?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL0mAWAAAba-h?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Chinatown</p>
+              <p>バンクーバーのチャイナタウンは、華やかな入り口と、ビクトリア朝時代に建てられた古くモダンな建物が特徴で、中心部には、明朝の伝統的な庭園をモデルにしたクラシックチャイニーズガーデンがあります。また、世界で最も狭いわずか2メートルの幅のオフィスビルとされているサムキービルもあります。毎年、中国の旧正月は賑やかなパレードで祝われます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>578 Carrall St, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://vancouver-chinatown.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMam3WkAY1qz3?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL87PX0AEcMe-?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Capilano Suspension Bridge</p>
+              <p>吊り橋は深さ70メートルの深い峡谷にまたがり、トーテムポールや、クリフウォークと呼ばれるエキサイティングなアクティビティもあります。バンクーバーからは吊り橋への無料シャトルを使うと便利です。また、近くのサーモン孵化場は（特に秋に）上流に向かって泳いでいるサーモンを見る事ができます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>3735 Capilano Road, North Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.capbridge.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgI6VjX0AAFGq9?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL87QXQAEgmBD?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Museum of Vancouver</p>
+              <p>バンクーバー美術館では、バンクーバーの作品を中心に扱う大きな美術館です。ジャパンタウンやキツラノヒッピーの時代、そして都市開発まで、都市の歴史を網羅しています。また、プラネタリウムを備えたマクミランスペースセンター、展望台、ウォーターフロントの海洋博物館など、他にも価値のある美術館や施設も徒歩圏内にあります。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>1100 Chestnut Street, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://museumofvancouver.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMcSqXYAAYHiB?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL-vMXkAIo7GT?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Science World</p>
+              <p>サイエンスワールドは未来的な球体のような建物で、中には探検センターや、12の体験型展示を通して様々な科学的現象を展示しています。大きく分けて、テーマは水、空気、動き、発明などがあります。見所の1つとして、世界最大のドーム型スクリーンである5階建ての高さのスクリーンに映像が映し出される光景は必見です。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>1455 Quebec Street, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://www.scienceworld.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMcSxWsAAgkUH?format=jpg&name=900x900">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacL-vWXkAEruDa?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">Whale Watching</p>
+              <p>セイリッシュ海として知られるバンクーバーの沖の海は、クジラやシャチを見るのに最適な場所です。ザトウクジラとコククジラ、さらに小さなミンクとシャチがこれらの海域で泳いでいます。ホエールウォッチングのベストシーズンは3月から10月です。クジラを見るには、水上飛行機やボート、安定した大型のツアーボートなどから選べます。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>Salish Sea</p>
+                <a class="pop btn-flat-simple" href="https://www.newfoundlandlabrador.com/things-to-do/whale-watching?gclid=CjwKCAjw2uf2BRBpEiwA31VZj-L5K1xu39UD8iv5hftxB-Dc5jEz2E5Gp8ez_cKs906ZgiB9WMd-hhoCKXYQAvD_BwE"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMam1XQAEIjgY?format=jpg&name=small">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacMANgX0AEx1jc?format=jpg&name=small">
+            </div>
+          </div>
+          <div class="long-content">
+            <div class="long-text">
+              <p class="long-title">VanDusen Botanical Garden</p>
+              <p>ヴァンデューセン植物園は、バンクーバーの中心部にあるオアシスのような場所で、世界中から7,500を超える植物種と品種を観賞できます。植物園の中では野生生物を見つけて写真を撮ったり、エリザベス朝の生垣の迷路を通り抜けたり、静かな環境でくつろいだり、カフェやレストランのパティオで食事をしたりできます。この植物園ではイッテQの出川Englishの回で紹介もされておりエリザベス朝の生垣の迷路は必見です。</p>
+            </div>
+            <div class="long-middle">
+              <div class="long-up">
+                <p>5151 Oak Street, Vancouver, BC</p>
+                <a class="pop btn-flat-simple" href="https://vandusengarden.org/"><i class="fa fa-caret-right"></i>ホームページ</a>
+              </div>
+              <img class="long-down" src="https://pbs.twimg.com/media/EbgMam3WoAABk7x?format=jpg&name=small">
+            </div>
+            <div class="icon-area">
+              <img class="long-icon" src="https://pbs.twimg.com/media/EacMANiXQAE2m7I?format=jpg&name=small">
+            </div>
+          </div>
+        </div>
+        <!-- 414px~ -->
+        <div class="long_contents">
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLu8TXYAAhp4F?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Stanley Park</p>
+                  <p>バンクーバーのダウンタウンに隣接するStanley Parkは巨大な木々で覆われた緑豊かな半島で、舗装された護岸道が緑地を取り囲み、徒歩または自転車で探索する事ができます。春になると、公園の庭園や木が、桜色に染まり、シャクナゲなどの美しい色の変化も楽しめます。夏には、海のすぐそばにある80メートルの屋外プールが営業し始め、人気のスポットとして多くの人々に愛されています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>Vancouver, BC V6G 1Z4</p>
+                  <a class="pop_ btn-flat-simple" href="https://vancouver.ca/parks-recreation-culture/stanley-park.aspx"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMam2XQAAMWrY?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLxFuXYAAe8Ge?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Granville Island</p>
+                  <p>元々は工業地帯だったGranville Islandは、独特の雰囲気でアーティストや雑貨屋、劇場、ギャラリー、レストランなどが数多く並んでいます。その他にもマーケットでは多種多様な果物や野菜、魚介類が販売されている人気のある観光スポットで、すぐに食べられるのも魅力の一つです。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>1441 Cartwright St, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://granvilleisland.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI6VeWsAIORAr?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLxFzXYAArYsf?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Grouse Mountain</p>
+                  <p>Grouse Mountainでは冬と夏の両方で綺麗な景色を見る事ができます。特に、街の明かりが点灯している夜はより一層綺麗に見えます。Grouse Mountainのゴンドラは、街から頂上付近まで毎日運行しており、頂上では食事、アクティビティ、野生生物を一年中見る事ができます。冬のGrouse Mountainでは、屋外スケート、スノーシュー、スキー、スノーボード。夏は、ハイキングコースとなり、自然を満喫できます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>6400 Nancy Greene Way, North Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.grousemountain.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI86ZXYAAnnVw?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLy0KXsAAz9yY?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Museum of Anthropology</p>
+                  <p>人類学博物館は、世界中の文化を扱っていますが、特にカナダのブリティッシュコロンビアの先住民に重点を置いて展示しています。この博物館の建物は、もともと第二次世界大戦時代の砦の一部であったものをカナダの建築家アーサーエリクソンは、博物館に変えました。近くの大学のキャンパス内には、自然史に焦点を当てたビーティ生物多様性博物館、植栽と繊細な新渡戸日本庭園があるUBC植物園などがあります。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>6393 NW Marine Drive, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://moa.ubc.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgJAC3XkAczjeY?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacLy0KXQAEES2Y?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Kitsilano Beach</p>
+                  <p>Kitsilano Beachの砂浜は、友達と過ごしたり、屋外の温水海水プールで泳ぐことができるする場所です。ビーチや海岸に加えて、このエリアには多くのカフェやウォーキングスペースがあり、近くにショッピングエリアもあります。ビーチの東側にはバニエパークがあり、広大なスペースとバンクーバー海洋博物館があります。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>2305 Cornwall Ave, Vancouver, BC</p>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIzgDXQAAx2in?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL0l5XYAQQeb4?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Gastown</p>
+                  <p>バンクーバーで最も古いガスタウンでは、修復されたビクトリア朝の建物の中でレストラン、アートギャラリー、ショップを楽しめるエリアです。歴史的建造物、石畳の通り、鉄でできた街灯がガスタウンに独特の雰囲気を与えています。ガスタウンはジョンデイトンと呼ばれる男がカナダに到着し、1867年に誕生しました。また、ガスタウンの有名な右写真の時計は、15分ごとに蒸気式スチームクロックのチャイムを聞く事ができます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>305 Water St, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.tourismvancouver.com/vancouver/neighbourhoods/gastown/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgIzgIXkAY9w9N?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL0mAWAAAba-h?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Canada Place</p>
+                  <p>Canada Placeでは特徴的で珍しい船のような建築構造が港にいるかのような雰囲気を作り出します。桟橋の先からは、パノラマの塔に広がる景色とカナダの美しい自然の魅力を感じられます。また、近くにはStanley Parkに向かって美しいウォーターフロントの道が続いています。さらに近くからは水上飛行機が離着陸し、巨大な海上コンテナ船が行き来しています。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>999 Canada Place, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.canadaplace.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMXK_XkAEV6Se?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL87PX0AEcMe-?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Chinatown</p>
+                  <p>バンクーバーのチャイナタウンは、華やかな入り口と、ビクトリア朝時代に建てられた古くモダンな建物が特徴で、中心部には、明朝の伝統的な庭園をモデルにしたクラシックチャイニーズガーデンがあります。また、世界で最も狭いわずか2メートルの幅のオフィスビルとされているサムキービルもあります。毎年、中国の旧正月は賑やかなパレードで祝われます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>578 Carrall St, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://vancouver-chinatown.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMam3WkAY1qz3?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL87QXQAEgmBD?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Capilano Suspension Bridge</p>
+                  <p>吊り橋は深さ70メートルの深い峡谷にまたがり、トーテムポールや、クリフウォークと呼ばれるエキサイティングなアクティビティもあります。バンクーバーからは吊り橋への無料シャトルを使うと便利です。また、近くのサーモン孵化場は（特に秋に）上流に向かって泳いでいるサーモンを見る事ができます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>3735 Capilano Road, North Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.capbridge.com/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgI6VjX0AAFGq9?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL-vMXkAIo7GT?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Museum of Vancouver</p>
+                  <p>バンクーバー美術館では、バンクーバーの作品を中心に扱う大きな美術館です。ジャパンタウンやキツラノヒッピーの時代、そして都市開発まで、都市の歴史を網羅しています。また、プラネタリウムを備えたマクミランスペースセンター、展望台、ウォーターフロントの海洋博物館など、他にも価値のある美術館や施設も徒歩圏内にあります。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>1100 Chestnut Street, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://museumofvancouver.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMcSqXYAAYHiB?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacL-vWXkAEruDa?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Science World</p>
+                  <p>サイエンスワールドは未来的な球体のような建物で、中には探検センターや、12の体験型展示を通して様々な科学的現象を展示しています。大きく分けて、テーマは水、空気、動き、発明などがあります。見所の1つとして、世界最大のドーム型スクリーンである5階建ての高さのスクリーンに映像が映し出される光景は必見です。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>1455 Quebec Street, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://www.scienceworld.ca/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMcSxWsAAgkUH?format=jpg&name=900x900">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacMANgX0AEx1jc?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">Whale Watching</p>
+                  <p>セイリッシュ海として知られるバンクーバーの沖の海は、クジラやシャチを見るのに最適な場所です。ザトウクジラとコククジラ、さらに小さなミンクとシャチがこれらの海域で泳いでいます。ホエールウォッチングのベストシーズンは3月から10月です。クジラを見るには、水上飛行機やボート、安定した大型のツアーボートなどから選べます。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <a class="pop_ btn-flat-simple" href="https://www.newfoundlandlabrador.com/things-to-do/whale-watching?gclid=CjwKCAjw2uf2BRBpEiwA31VZj-L5K1xu39UD8iv5hftxB-Dc5jEz2E5Gp8ez_cKs906ZgiB9WMd-hhoCKXYQAvD_BwE"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMam1XQAEIjgY?format=jpg&name=small">
+              </div>
+            </div>
+          </div>
+          <div class="long_content">
+            <div class="icon_area">
+              <img class="long_icon" src="https://pbs.twimg.com/media/EacMANiXQAE2m7I?format=jpg&name=small">
+            </div>
+            <div class="long_under">
+              <div class="long_left">
+                <div class="long_text">
+                  <p class="long_title">VanDusen Botanical Garden</p>
+                  <p>ヴァンデューセン植物園は、バンクーバーの中心部にあるオアシスのような場所で、世界中から7,500を超える植物種と品種を観賞できます。植物園の中では野生生物を見つけて写真を撮ったり、エリザベス朝の生垣の迷路を通り抜けたり、静かな環境でくつろいだり、カフェやレストランのパティオで食事をしたりできます。この植物園ではイッテQの出川Englishの回で紹介もされておりエリザベス朝の生垣の迷路は必見です。</p>
+                </div>
+              </div>
+              <div class="long_right">
+                <div class="long_up">
+                  <p>5151 Oak Street, Vancouver, BC</p>
+                  <a class="pop_ btn-flat-simple" href="https://vandusengarden.org/"><i class="fa fa-caret-right"></i>ホームページ</a>
+                </div>
+                <img class="long_down" src="https://pbs.twimg.com/media/EbgMam3WoAABk7x?format=jpg&name=small">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="adv">
+      <a href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+AJULI2+4J48+5Z6WX" rel="nofollow">
+        <img border="0" width="468" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=200713209638&wid=002&eno=01&mid=s00000021140001004000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3BHZAX+AJULI2+4J48+5Z6WX" alt="">
+    </div>
+    <div class="adva">
+      <a href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+AJULI2+4J48+5ZEMP" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www25.a8.net/svt/bgt?aid=200713209638&wid=002&eno=01&mid=s00000021140001005000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=3BHZAX+AJULI2+4J48+5ZEMP" alt="">
+    </div>
+    <div class="Instagram">
+      <div class="container">
+        <div class="insta-top">
+          <h1 id="instajump"><i class="fab fa-instagram"></i> Instagram <i class="fab fa-instagram"></i></h1>
+          <p>英語学習におすすめアカウント</p>
+        </div>
+        <div class="insta-contents">
+
+        </div>
+      </div>
+    </div>
+    <div class="twitter">
+      <div class="container">
+        <div class="twitter-top">
+          <h1 id="twijump"><i class="fab fa-twitter-square"></i> Twitter <i class="fab fa-twitter-square"></i></h1>
+          <p>英語学習やカナダの情報を発信しているアカウント</p>
+        </div>
+        <div class="twitter-contents">
+          <h1>coming soon...</h1>
+        </div>
+      </div>
+    </div>
+    <div class="youtube">
+      <div class="container">
+        <div class="you-top">
+          <h1 id="youjump"><i class="fab fa-youtube"></i> Youtube <i class="fab fa-youtube"></i></h1>
+          <p>Youtubeでの英語学習におすすめのチャンネル</p>
+        </div>
+        <div class="you-contents">
+          <h1>Coming soon...</h1>
+        </div>
+      </div>
+    </div>
+    <div class="school">
+      <div class="container">
+        <div class="sc-top">
+          <h1 id="scjump"><i class="fas fa-newspaper"></i> News <i class="fas fa-newspaper"></i></h1>
+          <p>情報収集や英語学習に利用できるnews</p>
+        </div>
+        <div class="contents">
+
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZaO9HhXkAI5bdD?format=jpg&name=small">
+            <div class="text">
+              <p class="site">BBC</p>
+              <p>イギリスの1922年に設立された世界的権威のある会社。1日1記事がおすすめ。</p>
+              <a class="btn-flat-simples" href="https://www.bbc.com/news"><i class="fa fa-caret-right"></i>BBCへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZaO9HeXsAAAPSH?format=jpg&name=360x360">
+            <div class="text">
+              <p class="site">CNN</p>
+              <p>アメリカの世界初の24時間ニュースをテレビで流した会社。難しいが情報が早いのでおすすめ。</p>
+              <a class="btn-flat-simples" href="https://www.cnn.com/"><i class="fa fa-caret-right"></i>CNNへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZaO9HgXYAEDGcP?format=jpg&name=small">
+            <div class="text">
+              <p class="site">AFP</p>
+              <p>世界三大通信会社の一つ。世界各国の情報がすぐに入る。</p>
+              <a class="btn-flat-simples" href="https://www.afp.com/en/news-hub"><i class="fa fa-caret-right"></i>AFPへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZaO-YQWkAAwlU7?format=jpg&name=medium">
+            <div class="text">
+              <p class="site">blogto</p>
+              <p>トロントで毎日ニュースやイベントを投稿しているサイト。インスタもおすすめ。</p>
+              <a class="btn-flat-simples" href="https://www.blogto.com/"><i class="fa fa-caret-right"></i>blogtoへ</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EZaO-YWXkAEnuml?format=jpg&name=small">
+            <div class="text column">
+              <p class="site">日本領事館</p>
+              <p>日本関連のの公式情報は領事館で。日本語の電話対応もしているため頼りになる。</p>
+              <a class="pop_ btn-flat-simples pops" href="https://www.toronto.ca.emb-japan.go.jp/itprtop_ja/index.html"><i class="fa fa-caret-right"></i>在トロント領事館</a>
+              <a class="pop_ btn-flat-simples pops" href="https://www.vancouver.ca.emb-japan.go.jp/itprtop_ja/index.html"><i class="fa fa-caret-right"></i>在バンクーバー領事館</a>
+            </div>
+          </div>
+          <div class="content">
+            <img class="icon" src="https://pbs.twimg.com/media/EakyabLWoAAxbE4?format=jpg&name=900x900">
+            <div class="text">
+              <p class="site">me</p>
+              <p>Editor。自称ワーホリLv99。</p>
+              <a class="btn-flat-simples" href="https://instagram.com/ryow_jpn?igshid=1tp9gfbfpfcuf"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="adv">
+      <a href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+BNQN16+4CUY+5Z6WX" rel="nofollow">
+        <img border="0" width="468" height="60" alt="" src="https://www20.a8.net/svt/bgt?aid=200713209705&wid=002&eno=01&mid=s00000020329001004000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=3BHZAX+BNQN16+4CUY+5Z6WX" alt="">
+    </div>
+    <div class="adva">
+      <a href="https://px.a8.net/svt/ejp?a8mat=3BHZAX+BNQN16+4CUY+5ZEMP" rel="nofollow">
+        <img border="0" width="320" height="50" alt="" src="https://www20.a8.net/svt/bgt?aid=200713209705&wid=002&eno=01&mid=s00000020329001005000&mc=1">
+      </a>
+      <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=3BHZAX+BNQN16+4CUY+5ZEMP" alt="">
+    </div>
+    <div class="danger">
+      <div class="container">
+        <div class="dan-top">
+          <h1 id="dajump"><i class="fas fa-exclamation-triangle"></i> Dangerous Place <i class="fas fa-exclamation-triangle"></i></h1>
+          <p>レベル1＝夜は行かないべき　レベル2＝昼も気を付けるべき　レベル3＝近づかないベき</p>
+        </div>
+        <div class="dan-contents">
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJww4XQAEveAq?format=jpg&name=900x900">
+            <div class="datext">
+              <h4 class="lv3">レベル3</h4>
+              <p class="come">Jean x Finch</p>
+              <p class="come">ヨーク大学近辺のこのエリアでは、窃盗、恐喝、ギャングがらみの発砲事件等が頻繁に発生しているトロントで最も治安が悪いとされている場所です。現地の人々に治安の悪いところを聞くとまずあげられるような場所なので一人で歩いたり、Jane x Finch付近では下車しないようにしてください。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJww5WoAE7NpI?format=jpg&name=900x900">
+            <div class="datext">
+              <h4 class="lv1">レベル1</h4>
+              <p class="come">Chinatown</p>
+              <p class="come">Chinatown付近はケンジントンマーケットがあり、そのため昼間には多くの観光客で賑わっており、観光名所の一つになっています。しかし、麻薬中毒者や浮浪者も多く、夜になるとドラッグの売買がされ、注射が道に落ちていることもあります。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJz-8WkAAa7Ch?format=jpg&name=900x900">
+            <div class="datext">
+              <h4 class="lv3">レベル3</h4>
+              <p class="come">Main x Hastings</p>
+              <p class="come">Vancouver Eastに位置する、GastownとChinatownの間は、犯罪発生率はカナダ、アメリカでも１、２位です。チャイナタウンやGastownに観光に行く方は把握しておきましょう。フレイザーの8番バスは地元では「クレイジー8」と呼ばれるようなバスなので極力避けましょう。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJww3XsAAEt2X?format=jpg&name=small">
+            <div class="datext">
+              <h4 class="lv1">レベル1</h4>
+              <p class="come">Sherbourne x Dundas</p>
+              <p class="come">この付近はドラッグの売買エリアとして有名で特に夜になると活発になります。Sherbourne駅付近はスラム街と呼ばれるエリアで、低所得者層向けの建物が多く存在しています。麻薬の売買が頻繁に行われ、犯罪が多発する危険な地域です。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJyTSX0AAJq3t?format=jpg&name=small">
+            <div class="datext">
+              <h4 class="lv1">レベル1</h4>
+              <p class="come">Dufferin x Eglinton</p>
+              <p class="come">ジャマイカ料理やマリファナの売買が度々行われ、夜は酔っぱらった人や薬物中毒者が彷徨っていることもあるエリア。ps.付近に住んでいるが異常なし。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJyUKWoAE-ZRG?format=jpg&name=900x900">
+            <div class="datext">
+              <h4 class="lv2">レベル2</h4>
+              <p class="come">Young-Dundas Square</p>
+              <p class="come">特にトロントダウンタウンのメインストリートであるYoung stは人々で賑わっている反面、多くのホームレスが住んでおり、物乞いをしています。観光客やブランド物を持っている人たちは声をかけられやすいので声をかけられた時はキッパリ断りましょう。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJyTYWoAIU1o6?format=jpg&name=900x900">
+            <div class="datext">
+              <h4 class="lv2">レベル2</h4>
+              <p class="come">Allan Garden</p>
+              <p class="come">ダウンタウンの北東に位置するAllan Gardenは、温室庭園があり無料で入場が可能なことから、昼間は現地人や観光客で賑わっています。しかし、ドラッグの取引エリアとしても有名で、夜の一人歩きは避けるようにしましょう。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJyTQXYAE3Y50?format=jpg&name=small">
+            <div class="datext">
+              <h4 class="lv1">レベル1</h4>
+              <p class="come">Scarborough Town</p>
+              <p class="come">トロントのEastサイドに位置するScarboroughのさらに北東に位置するこのショッピングモール付近では盗難や暴行が多発する危険な地域です。トロント動物園も位置するScarbroughの最東エリアも治安の悪いです。</p>
+            </div>
+          </div>
+          <div class="dan-content">
+            <img class="daicon" src="https://pbs.twimg.com/media/EanJz-7XgAAx6ma?format=jpg&name=small">
+            <div class="datext">
+              <h4 class="lv2">レベル2</h4>
+              <p class="come">Public Library</p>
+              <p class="come">トロントの図書館ではスリ、置き引きが多く発生し、特に、勉強中の学生が居眠りやトイレで目を離している隙にスマホやPCが無くなっていたということがあります。また、日本人の性格につけこんだ悪質な事件も起きており、事件に巻き込まれる可能性もあります。カナダ人は一般的にフレンドリーで話しやすいですが、気をつけましょう。</p>
+            </div>
+          </div>
+          <div class="sdan-content">
+            <img class="sdaicon" src="https://pbs.twimg.com/media/EanMsreWAAA8f1-?format=jpg&name=small">
+            <div class="datext">
+              <h4 class="lv">レベル？？</h4>
+              <p class="come">Canada</p>
+              <p class="come">やはり、住みやすい国や治安が良い国と言われていても危険な場所は存在します。ここに挙げた場所以外にも危険となり得るエリアは存在し、普段は安全だという場所も日や時間が違えば危険になり得ます。そういった危険を避けるためにも周りの雰囲気を判断し貴重品の管理をすることは危険を避けるために必要です。ここまで危険な場所を紹介してきましたがトロントもバンクーバーも楽しく過ごせる場所ばかりなので素敵なカナダライフを送れるよう、願っています。ps.最近財布を無くしてカード全滅しました。。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- ホーム画面の出し方 -->
+      <div class="container">
+        <div class="min-none">
+          <p>お使いのスマートフォンは当WEBサイトに対応していません。</p>
+          <p>PCでの利用をお待ちしております。</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-top">
+            <h5>じゃ<span>か</span>ぽん(Ja<span>Ca</span>Pon)は日本JapanとカナダCanadaを繋ぐ情報サイトです。より有益なものにするためにご意見やご要望のある方は下記お問い合わせフォームよりお待ちしております。また、Editorがトロント在住のためバンクーバーやカルガリーなどの他地域と比べて情報量が異なっています。そのため他地域の情報は細かいものでもお伝えしていただけると幸いです。</h5>
+          </div>
+          <div class="footer-bottom">
+            <p>お問い合わせはこちらへ ↓↓<a class="a" href="mailto:tennis.nakano.love@gmail.com?　subject=お問い合わせ&amp;body=要望または提案は以下へお願いします。"><i class="fas fa-envelope fa-2x contact"></i></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal({ reset: false ,mobile: false});
+      sr.reveal( '.icon', { origin: 'left' , distance: '250%', duration: 1500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.text', { origin: 'right' , distance: '250%', duration: 1500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.long-icon', { origin: 'right' , distance: '250%', duration: 3500 , scale: 1.0, delay :400 ,opacity: 0,});
+      sr.reveal( '.long-title', { origin: 'left' , distance: '150%', duration: 1500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.long-down', { origin: 'right' , distance: '200%', duration: 5000 , scale: 1.0, delay :600 ,opacity: 0,});
+      sr.reveal( '.pop', { origin: 'right' , distance: '200%', duration: 4500 , scale: 1.0, delay :400 ,opacity: 0,});
+      sr.reveal( '.daicon', { origin: 'bottom' , distance: '200%', duration: 3500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.sdaicon', { origin: 'bottom' , distance: '200%', duration: 3500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.lv', { origin: 'left' , distance: '200%', duration: 8000 , scale: 1.0, delay :200 ,opacity: 1.0,});
+      sr.reveal( '.lv1', { origin: 'left' , distance: '200%', duration: 1000 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.lv2', { origin: 'left' , distance: '200%', duration: 2500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.lv3', { origin: 'left' , distance: '200%', duration: 4500 , scale: 1.0, delay :200 ,opacity: 0,});
+      sr.reveal( '.come', { origin: 'bottom' , distance: '0%', duration: 1500 , scale: 1.0, delay :400 ,opacity: 0,});
+    </script>
+  </body>
+</html>
