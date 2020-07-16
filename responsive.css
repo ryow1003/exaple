@@ -23,6 +23,9 @@
   }
 }
 @media screen and (max-width:1024px){
+  .advd{
+    display: none;
+  }
   .top-wrapper h1{
     font-size: 80px;
   }
