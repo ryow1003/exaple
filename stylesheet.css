@@ -362,6 +362,7 @@ li a{
                -7px -7px 14px #ffffff;
   display: inline-block;
   padding:10px 15px;
+  margin-bottom: 15px;
 }
 
 .icon{
@@ -510,6 +511,7 @@ li a{
   display: inline-block;
   padding:10px 15px;
   border-radius: 0;
+  margin-bottom: 15px;
 }
 
 .long-text p{
