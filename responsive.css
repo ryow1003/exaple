@@ -1,3 +1,14 @@
+
+@media screen and (max-width:1920px){
+  .icon{
+    height:414px;
+  }
+}
+@media screen and (max-width:1440px){
+  .icon{
+    height:311px;
+  }
+}
 @media screen and (max-width:1366px){
 
   .text p{
