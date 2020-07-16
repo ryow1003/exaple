@@ -243,10 +243,10 @@
     font-size: 60%;
   }
   .site{
-    margin: 0 auto 5px auto;
+    margin: 0 auto 10px auto;
   }
   .long-title{
-    margin:0;
+    margin:0 0 10px 0;
   }
   .long-middle h4{
     font-size: 70%;
@@ -472,11 +472,11 @@
     padding:2px;
   }
   .long-text p{
-    font-size:9px;
+    font-size:10px;
     letter-spacing: 1px;
   }
   .long-up p{
-    font-size: 5px;
+    font-size: 8px;
     padding-bottom: 0px;
   }
   .long-title{
@@ -484,8 +484,8 @@
     letter-spacing: 1px;
   }
   .long-up a{
-    font-size: 8px;
-    padding:0px;
+    font-size: 11px;
+    padding:5px;
     margin-top: 0;
   }
   .cafe-contents{
