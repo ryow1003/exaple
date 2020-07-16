@@ -369,6 +369,10 @@ li a{
   border-radius: 10%;
 }
 
+.circle{
+  border-radius: 50%
+}
+
 .text{
   width:50%;
   padding:5px;
@@ -486,6 +490,10 @@ li a{
   letter-spacing: 2px;
   opacity: 0.8;
   font-family: "Noto Sans JP", sans-serif;
+  transition: 1s;
+}
+.long-text:hover{
+  background: #C9FCFB;
 }
 
 .long-title{
@@ -1108,7 +1116,10 @@ li a{
   text-align: center;
   display: none;
 }
-
+.advd{
+  margin-top: 100px;
+  text-align: center;
+}
 
 .column{
   display: flex;
