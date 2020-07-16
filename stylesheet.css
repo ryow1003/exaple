@@ -362,6 +362,7 @@ li a{
 
 .icon{
   width:50%;
+  height:260px;
   background: #f8f8f7;
   box-shadow:  7px 7px 16px #757574,
               -7px -7px 16px #ffffff;
