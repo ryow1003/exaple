@@ -362,7 +362,7 @@ li a{
                -7px -7px 14px #ffffff;
   display: inline-block;
   padding:10px 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .icon{
@@ -511,7 +511,7 @@ li a{
   display: inline-block;
   padding:10px 15px;
   border-radius: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .long-text p{
@@ -1003,8 +1003,12 @@ li a{
   box-shadow:  5px 5px 10px #a4a1a6,
                -5px -5px 10px #ffffff;
 }
+.come{
+  margin-top: 20px;
+}
 
 .lv{
+  margin-top: 20px;
   border-radius: 0px;
   background: linear-gradient(145deg, #b790d6, #d9abff);
   box-shadow:  5px 5px 10px #866a9d,
@@ -1012,6 +1016,7 @@ li a{
 }
 
 .lv1{
+  margin-top: 20px;
   border-radius: 0px;
   background: linear-gradient(145deg, #ddddae, #ffffcf);
   box-shadow:  5px 5px 10px #a2a27f,
@@ -1019,6 +1024,7 @@ li a{
 }
 
 .lv2{
+  margin-top: 20px;
   border-radius: 0px;
   background: linear-gradient(145deg, #dddd64, #ffff77);
   box-shadow:  5px 5px 10px #a2a249,
@@ -1026,6 +1032,7 @@ li a{
 }
 
 .lv3{
+  margin-top: 20px;
   border-radius: 0px;
   background: linear-gradient(145deg, #e0e001, #ffff01);
   box-shadow:  5px 5px 10px #a4a401,
